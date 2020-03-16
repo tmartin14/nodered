@@ -1,0 +1,2599 @@
+[
+    {
+        "id": "9f4c332c.51f92",
+        "type": "tab",
+        "label": "Retail Demo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3d5034ff.69fedc",
+        "type": "subflow",
+        "name": "RD - Order Fullfillment",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 40,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "9a16b5c8.c47ba8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1540,
+                "y": 600,
+                "wires": [
+                    {
+                        "id": "e28c91bb.8b25",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "a68c337.ac348d",
+        "type": "subflow",
+        "name": "RD - Delivery",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 80,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "6ca97316.917f2c"
+                    }
+                ]
+            }
+        ],
+        "out": [],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "8e826397.79246",
+        "type": "subflow",
+        "name": "Write to CSV",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 120,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "6a2dadf3.944734"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 860,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "7cdf3ce0.f51bd4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "67b43599.32cc2c",
+        "type": "subflow",
+        "name": "Product Selection Process",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 80,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "e9c42016.5ac7a"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1100,
+                "y": 780,
+                "wires": [
+                    {
+                        "id": "e14c4619.64eab8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "f16eab4e.a11b28",
+        "type": "subflow",
+        "name": "Process Payment",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 80,
+                "y": 140,
+                "wires": [
+                    {
+                        "id": "782af5e.e95920c"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1640,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "be2dfff4.befb4",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "27d2cb9c.1a7874",
+        "type": "subflow",
+        "name": "Pay by CreditCard",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 60,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "474d1a22.1bc7d4"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1540,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "3790c15.1b0a73e",
+                        "port": "1"
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "b381444b.015aa8",
+        "type": "subflow",
+        "name": "-> CSV [Shipping]",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 470,
+                "y": 300,
+                "wires": [
+                    {
+                        "id": "339a335.989a4cc"
+                    }
+                ]
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "7587ee11.aa269",
+        "type": "subflow",
+        "name": "-> CSV [Online Shopping]",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 230,
+                "y": 120,
+                "wires": [
+                    {
+                        "id": "d5d0488c.c9e678"
+                    }
+                ]
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "14635859.ef9c28",
+        "type": "subflow",
+        "name": "-> CSV [Warehouse]",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 140,
+                "y": 150,
+                "wires": [
+                    {
+                        "id": "ae004c29.7ffc6"
+                    }
+                ]
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "3a2a8b1a.4b7394",
+        "type": "subflow",
+        "name": "Pay with PayPal",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 700,
+                "y": 450,
+                "wires": [
+                    {
+                        "id": "cd78c784.27e6e8"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 450,
+                "wires": [
+                    {
+                        "id": "cd78c784.27e6e8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "10c44a3.64f0db6",
+        "type": "subflow",
+        "name": "RD - Online Shopping",
+        "info": "",
+        "category": "Retail Demo",
+        "in": [
+            {
+                "x": 40,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "fcbfe87a.848218"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1480,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "5e9854ea.2dbb7c",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "285d452c.18aeda",
+        "type": "subflow:3d5034ff.69fedc",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "env": [],
+        "x": 1140,
+        "y": 260,
+        "wires": [
+            [
+                "6c58c567.69beec"
+            ]
+        ]
+    },
+    {
+        "id": "f76ee430.c80e88",
+        "type": "inject",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 260,
+        "wires": [
+            [
+                "42dd25e6.03174c"
+            ]
+        ]
+    },
+    {
+        "id": "6c58c567.69beec",
+        "type": "subflow:a68c337.ac348d",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "env": [],
+        "x": 1350,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "9784a1b2.634ad",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package delivered",
+        "func": "msg.wait_time_ms =  3600000;   //hours\nmsg.wait_random_min =     2;\nmsg.wait_random_max =    16;\n\n\nmsg.action = \"Package Delivered\";\nmsg.stage  = \"Delivery\";\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 600,
+        "wires": [
+            [
+                "27a6f085.2b7d2"
+            ]
+        ]
+    },
+    {
+        "id": "52416939.d34728",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package Arrived in Logictis Start Center",
+        "func": "msg.wait_time_ms =   720000;\nmsg.wait_random_min =     1;\nmsg.wait_random_max =     2;\n\n\nmsg.action = \"Arrived in Logistics\";\nmsg.stage  = \"Delivery\";\nmsg.delivery_attempts = 0;\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "92a5bdfc.60118"
+            ]
+        ]
+    },
+    {
+        "id": "42fbbb0f.392724",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package Processed in Logistics Hub",
+        "func": "msg.wait_time_ms =  86400000;\nmsg.wait_random_min =     1;\nmsg.wait_random_max =     3;\n\n\nmsg.action = \"Processed in Hub\";\nmsg.stage  = \"Delivery\";\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "f72aed88.83c1d"
+            ]
+        ]
+    },
+    {
+        "id": "5153e684.812608",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package out for delivery",
+        "func": "msg.wait_time_ms =  3600000;    // hours\nmsg.wait_random_min =     2;\nmsg.wait_random_max =     6;\n\n\nif(msg.delivery_attempts > 1){\n    msg.wait_random_min =    24;   // a day or 2 for re-deliveries\n    msg.wait_random_max =    60;\n}\nmsg.action = \"Out for Delivery\";\nmsg.stage  = \"Delivery\";\nmsg.delivery_attempts += 1;\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 340,
+        "wires": [
+            [
+                "33ad9fc7.10276"
+            ]
+        ]
+    },
+    {
+        "id": "23b29661.11d1ba",
+        "type": "comment",
+        "z": "9f4c332c.51f92",
+        "name": "Overall Retail Demo Process",
+        "info": "",
+        "x": 920,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "44f2daee.548624",
+        "type": "csv",
+        "z": "8e826397.79246",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\r",
+        "temp": "timestamp, client_ip, session_id, stage, action, basket_id, product_id, quantity, order_id, shipping_id, duration_ms",
+        "skip": "0",
+        "strings": true,
+        "x": 830,
+        "y": 160,
+        "wires": [
+            [
+                "45acffec.add53"
+            ]
+        ]
+    },
+    {
+        "id": "45acffec.add53",
+        "type": "file",
+        "z": "8e826397.79246",
+        "name": "",
+        "filename": "/Users/tomm/Downloads/retail.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "x": 1060,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecd669db.23c258",
+        "type": "function",
+        "z": "f16eab4e.a11b28",
+        "name": "Order Created",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =    5;\n\n\nmsg.order_id = \"O-\" + (30000 + msg.gcount);\nmsg.action = \"Order Created\"\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1240,
+        "y": 300,
+        "wires": [
+            [
+                "be2dfff4.befb4"
+            ]
+        ]
+    },
+    {
+        "id": "782af5e.e95920c",
+        "type": "function",
+        "z": "f16eab4e.a11b28",
+        "name": "Start Payment Process",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =    3;\n\n\nmsg.action = \"Start Payment Process\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "62798309.e701cc"
+            ]
+        ]
+    },
+    {
+        "id": "c7f295ce.4e3508",
+        "type": "subflow:8e826397.79246",
+        "z": "f16eab4e.a11b28",
+        "name": "",
+        "x": 1030,
+        "y": 260,
+        "wires": [
+            [
+                "ecd669db.23c258"
+            ]
+        ]
+    },
+    {
+        "id": "eecc2fdd.ec74c",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "View Product Catalog",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =   10;\n\n\nmsg.action    = \"View Catalog\";\nmsg.stage     = \"Online Shop\";\nmsg.product_id = \"\"\nmsg.quantity   = \"\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 660,
+        "y": 120,
+        "wires": [
+            [
+                "f72f5da7.ac6c9"
+            ]
+        ]
+    },
+    {
+        "id": "4355ecb2.d724f4",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "Switch Checkout or Add / Remove Product",
+        "property": "change_product",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 410,
+        "y": 600,
+        "wires": [
+            [
+                "9dacdb83.8d2b08"
+            ],
+            [
+                "4a3519f.18945e8"
+            ],
+            [
+                "cda9aae1.5a1928"
+            ]
+        ]
+    },
+    {
+        "id": "4a3519f.18945e8",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Remove Product?",
+        "func": "var help = 0\n\n\nhelp = generateRandomNumber(0,100);\n\nif(help >= 66 && msg.products_in_basket > 1)\n    msg.remove_product = 1;\nelse\n    msg.remove_product = 0;\n\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 580,
+        "wires": [
+            [
+                "44fd7e14.c5ba9"
+            ]
+        ]
+    },
+    {
+        "id": "625293fe.198b4c",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Product Updates?",
+        "func": "var help = 0\n\n\nhelp = generateRandomNumber(0,100);\n\nmsg.change_product = 0;\nif(help >= 80)\n    msg.change_product = 1;      // update product\nelse if(help >= 70 )\n        msg.change_product = 2;  // remove product\n\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 520,
+        "wires": [
+            [
+                "4355ecb2.d724f4"
+            ]
+        ]
+    },
+    {
+        "id": "44fd7e14.c5ba9",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "Remove Product",
+        "property": "remove_product",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 950,
+        "y": 580,
+        "wires": [
+            [
+                "cda9aae1.5a1928"
+            ],
+            [
+                "572f667f.9a4618"
+            ]
+        ]
+    },
+    {
+        "id": "572f667f.9a4618",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Remove Product",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =   10;\nmsg.wait_random_max =  120;\n\n\nmsg.action = \"Remove a Product\";\nmsg.stage = \"Online Shop\";\n\nmsg.products_in_basket -= 1;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1210,
+        "y": 540,
+        "wires": [
+            [
+                "6e9c1424.e8097c"
+            ]
+        ]
+    },
+    {
+        "id": "e1438909.c88bb8",
+        "type": "function",
+        "z": "f16eab4e.a11b28",
+        "name": "Select Payment Method",
+        "func": "var help = 0\n\nmsg.product_id = \"\"\nmsg.quantity   = \"\";\n\n\n\nhelp = generateRandomNumber(0,100);\n\nmsg.payment_method = \"invoice\";\n\nif(help >= 0 && help < 60)\n    msg.payment_method = \"credit_card\";\nelse if(help >= 60 && help < 80)\n    msg.payment_method = \"paypal\";\n\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "fe7a00cb.49d2e"
+            ]
+        ]
+    },
+    {
+        "id": "fe7a00cb.49d2e",
+        "type": "switch",
+        "z": "f16eab4e.a11b28",
+        "name": "",
+        "property": "payment_method",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "invoice",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "paypal",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "credit_card",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 3,
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "40bf1f14.6f776"
+            ],
+            [
+                "b4a9b3a1.5ce94"
+            ],
+            [
+                "d3bf5fec.03158"
+            ]
+        ]
+    },
+    {
+        "id": "9eaa3a0.edb04c8",
+        "type": "function",
+        "z": "27d2cb9c.1a7874",
+        "name": "Pay with Credit Card",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =   30;\n\n\nmsg.action = \"Pay with Credit Card\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "ea3c6093.dd4e1"
+            ]
+        ]
+    },
+    {
+        "id": "1e7fde49.a6b292",
+        "type": "function",
+        "z": "27d2cb9c.1a7874",
+        "name": "Credit Card accepted?",
+        "func": "help = generateRandomNumber(0,100);\n\nmsg.credit_card_status = 0;\n\nif(help >= 85)\n    msg.credit_card_status = 1;     // card failed\n    \n    \nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 880,
+        "y": 80,
+        "wires": [
+            [
+                "3790c15.1b0a73e"
+            ]
+        ]
+    },
+    {
+        "id": "3790c15.1b0a73e",
+        "type": "switch",
+        "z": "27d2cb9c.1a7874",
+        "name": "Card Accepted?",
+        "property": "credit_card_status",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            [
+                "cb4d8b7e.12ad68"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "cb4d8b7e.12ad68",
+        "type": "function",
+        "z": "27d2cb9c.1a7874",
+        "name": "Credit Card Counter +1",
+        "func": "\nmsg.credit_card_counter += 1;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 180,
+        "wires": [
+            [
+                "7b31ffd8.fd2f4"
+            ]
+        ]
+    },
+    {
+        "id": "7b31ffd8.fd2f4",
+        "type": "switch",
+        "z": "27d2cb9c.1a7874",
+        "name": "Canceled?    (too many retries)",
+        "property": "credit_card_counter",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 700,
+        "y": 180,
+        "wires": [
+            [
+                "4c883ffa.9b9eb"
+            ],
+            [
+                "4756cd2b.9b6084"
+            ]
+        ]
+    },
+    {
+        "id": "4c883ffa.9b9eb",
+        "type": "function",
+        "z": "27d2cb9c.1a7874",
+        "name": "Transaction Rejected",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =    1;\n\n\n\nmsg.action = \"Transaction Rejected\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1040,
+        "y": 180,
+        "wires": [
+            [
+                "289956fd.23552a"
+            ]
+        ]
+    },
+    {
+        "id": "474d1a22.1bc7d4",
+        "type": "function",
+        "z": "27d2cb9c.1a7874",
+        "name": "Init",
+        "func": "\nmsg.credit_card_counter = 0;\nmsg.credit_card_status  = 0;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 190,
+        "y": 80,
+        "wires": [
+            [
+                "9eaa3a0.edb04c8"
+            ]
+        ]
+    },
+    {
+        "id": "9dacdb83.8d2b08",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Change Quantity?",
+        "func": "var help = 0\n\n\nhelp = generateRandomNumber(0,100);\n\nif(help >= 80 && msg.products_in_basket >= 1)\n    msg.change_quantity = 1;\nelse\n    msg.change_quantity = 0;\n\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 520,
+        "wires": [
+            [
+                "6116eb78.8d7814"
+            ]
+        ]
+    },
+    {
+        "id": "6116eb78.8d7814",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "Change Quantity?",
+        "property": "change_quantity",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 950,
+        "y": 520,
+        "wires": [
+            [
+                "1da193c3.1a194c"
+            ],
+            [
+                "cda9aae1.5a1928"
+            ]
+        ]
+    },
+    {
+        "id": "1da193c3.1a194c",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Change Quantity",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    5;\nmsg.wait_random_max =   15;\n\n\nmsg.action   = \"Change Quantity\";\nmsg.quantity = generateRandomNumber(1,5);\nmsg.stage    = \"Online Shop\";\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1210,
+        "y": 480,
+        "wires": [
+            [
+                "6e9c1424.e8097c"
+            ]
+        ]
+    },
+    {
+        "id": "6e9c1424.e8097c",
+        "type": "subflow:8e826397.79246",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "x": 1490,
+        "y": 500,
+        "wires": [
+            [
+                "cda9aae1.5a1928"
+            ]
+        ]
+    },
+    {
+        "id": "4756cd2b.9b6084",
+        "type": "function",
+        "z": "27d2cb9c.1a7874",
+        "name": "Retry Credit Card",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =   15;\n\n\nmsg.action = \"Retry Credit Card\";\n\nmsg.credit_card_status  = 0;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1030,
+        "y": 240,
+        "wires": [
+            [
+                "4fb766a8.fd28e8"
+            ]
+        ]
+    },
+    {
+        "id": "cda9aae1.5a1928",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Continue Shopping?",
+        "func": "var help = 0\n\n\nhelp = generateRandomNumber(0,100);\n\nif(help >= 50 && msg.products_in_basket < 4)\n    msg.continue_shopping = 1;\nelse\n    msg.continue_shopping = 0;\n\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1340,
+        "y": 660,
+        "wires": [
+            [
+                "621a32ac.5c9cfc"
+            ]
+        ]
+    },
+    {
+        "id": "621a32ac.5c9cfc",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "Checkout or Continue?",
+        "property": "continue_shopping",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 430,
+        "y": 740,
+        "wires": [
+            [
+                "f3917339.a3222"
+            ],
+            [
+                "91aa5d23.8ed6"
+            ]
+        ]
+    },
+    {
+        "id": "9a16b5c8.c47ba8",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Check Availability of Products",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    3;\nmsg.wait_random_max =   15;\n \n\n//  remove the session ID, we're not online any more\nmsg.payload.session_id = \"\";\nmsg.payload.client_ip  = \"\";\n\n\nvar options = generateRandomNumber(0,100);\n\nif(options >= 0 && options < 10)\n    msg.further_path = \"Offer Cancelation\"\n    else if(options >= 10 && options < 15)\n        msg.further_path = \"Recommend Alternative\"\n        else if(options >= 15 && options < 35)\n            msg.further_path = \"Inform about delay\"\n            else\n                msg.further_path = \"Ready for shipment\"\n\nmsg.action = \"Check Availability\";\nmsg.stage = \"Fullfilment\";\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 60,
+        "wires": [
+            [
+                "a03b4409.b0fe68"
+            ]
+        ]
+    },
+    {
+        "id": "427b3b10.f83cf4",
+        "type": "switch",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "property": "further_path",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Offer Cancelation",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Recommend Alternative",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Inform about delay",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "f18d3a2.d4b8cc8"
+            ],
+            [
+                "80abf982.4a7428"
+            ],
+            [
+                "98fa1769.be79f8"
+            ],
+            [
+                "1057e441.505f1c"
+            ]
+        ]
+    },
+    {
+        "id": "71cbea8d.cb14b4",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Package ready for Pick-Up",
+        "func": "msg.wait_time_ms    = 60000;\nmsg.wait_random_min =    20;\nmsg.wait_random_max =    90;\n\nmsg.action = \"Package ready for Pickup\";\nmsg.stage = \"Fullfilment\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1160,
+        "y": 600,
+        "wires": [
+            [
+                "e28c91bb.8b25"
+            ]
+        ]
+    },
+    {
+        "id": "e6a973.0ec1369",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 1390,
+        "y": 500,
+        "wires": [
+            [
+                "71cbea8d.cb14b4"
+            ]
+        ]
+    },
+    {
+        "id": "6ca97316.917f2c",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package Left Warehouse to Logistics Operator",
+        "func": "msg.wait_time_ms =  7200000;\nmsg.wait_random_min =     1;\nmsg.wait_random_max =     3;\n\n\n//   remove fulfillment attributes\nmsg.basket_id  = \"\";\nmsg.product_id = \"\";\nmsg.payload.session_id = \"\";\nmsg.payload.client_ip  = \"\";\nmsg.cust_return = 0;\n\nmsg.action = \"Package Left Warehouse\";\nmsg.stage  = \"Delivery\";\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "a1b23fbb.28919"
+            ]
+        ]
+    },
+    {
+        "id": "97c2ae44.1df1c",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "env": [],
+        "x": 1590,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "86be0afc.249668",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package deliverable?",
+        "func": "\nvar options = generateRandomNumber(0,100);\n\nif(options >= 90)\n    msg.delivered = 1;\nelse \n    msg.delivered = 0;\n \n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 480,
+        "wires": [
+            [
+                "505d1482.f3142c"
+            ]
+        ]
+    },
+    {
+        "id": "505d1482.f3142c",
+        "type": "switch",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "property": "delivered",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 560,
+        "wires": [
+            [
+                "6e6e535a.11a3fc"
+            ],
+            [
+                "9784a1b2.634ad"
+            ]
+        ]
+    },
+    {
+        "id": "d46a4205.3e03f",
+        "type": "switch",
+        "z": "a68c337.ac348d",
+        "name": "Retrying?",
+        "property": "delivery_attempts",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 960,
+        "y": 540,
+        "wires": [
+            [
+                "16c47926.d01697"
+            ],
+            [
+                "5153e684.812608"
+            ]
+        ]
+    },
+    {
+        "id": "16c47926.d01697",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Package returned to vendor",
+        "func": "msg.wait_time_ms =  86400000;    // 1 day\nmsg.wait_random_min =     1;\nmsg.wait_random_max =     2;\n\nmsg.action = \"Returned to Vendor\";\nmsg.stage  = \"Delivery\";\nmsg.delivery_attempts += 1;\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1280,
+        "y": 540,
+        "wires": [
+            [
+                "97c2ae44.1df1c"
+            ]
+        ]
+    },
+    {
+        "id": "6e6e535a.11a3fc",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Customer absent - Retry",
+        "func": "msg.wait_time_ms =  3600000;    //hours\nmsg.wait_random_min =     1;\nmsg.wait_random_max =    14;\n\n\nmsg.action = \"Customer Absent\";\nmsg.stage  = \"Delivery\";\nmsg.delivery_attempts += 1;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 540,
+        "wires": [
+            [
+                "7ff8f259.e8789c"
+            ]
+        ]
+    },
+    {
+        "id": "91bcfb4d.d7d288",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Calling Hotline",
+        "func": "msg.wait_time_ms =   30000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =   10;\n\n\nmsg.action = \"Calling Hotline\";\nmsg.stage = \"Online Shop\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 940,
+        "y": 280,
+        "wires": [
+            [
+                "6ee47739.349ba8"
+            ]
+        ]
+    },
+    {
+        "id": "f8af4060.f2a7",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Calls Hotline?",
+        "func": "\nvar help = 0\n\nhelp = generateRandomNumber(0,100);\n\nmsg.calls_hotline = 0;\n\nif(msg.country == \"Italy\" && help <= 90 && msg.did_call_hotline === 0)\n    msg.calls_hotline = 1;\nelse\n    if(msg.country != \"Italy\" && help >= 95 && msg.did_call_hotline === 0)\n        msg.calls_hotline = 1;\n    else\n        msg.calls_hotline = 0;\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 260,
+        "wires": [
+            [
+                "9ee9edf0.55daf"
+            ]
+        ]
+    },
+    {
+        "id": "9ee9edf0.55daf",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "property": "calls_hotline",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "91bcfb4d.d7d288"
+            ],
+            [
+                "82dfacd1.0450d"
+            ]
+        ]
+    },
+    {
+        "id": "2954489e.fc57d8",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Buys Product?",
+        "func": "\nvar help = 0\n\nhelp = generateRandomNumber(0,100);\n\n\n\nif(help > 75)\n    msg.buys_product = 1;\nelse\n    msg.buys_product = 0;\n\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1180,
+        "y": 280,
+        "wires": [
+            [
+                "f3adaa88.2cfaa8"
+            ]
+        ]
+    },
+    {
+        "id": "f3adaa88.2cfaa8",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "property": "buys_product",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1370,
+        "y": 280,
+        "wires": [
+            [],
+            [
+                "82dfacd1.0450d"
+            ]
+        ]
+    },
+    {
+        "id": "1dadb6.c828124a",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Logout / Timeout",
+        "func": "msg.wait_time_ms =   60000;    //minutes \nmsg.wait_random_min =    2;\nmsg.wait_random_max =   60;\n\n\n\nmsg.action = \"Logout / Timed Out\";\nmsg.stage = \"Online Shop\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 890,
+        "y": 60,
+        "wires": [
+            [
+                "2264634b.6f481c"
+            ]
+        ]
+    },
+    {
+        "id": "2264634b.6f481c",
+        "type": "subflow:8e826397.79246",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "env": [],
+        "x": 1230,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9c42016.5ac7a",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Init",
+        "func": "msg.did_call_hotline = 0;\n\n\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 210,
+        "y": 60,
+        "wires": [
+            [
+                "f3917339.a3222"
+            ]
+        ]
+    },
+    {
+        "id": "339a335.989a4cc",
+        "type": "function",
+        "z": "b381444b.015aa8",
+        "name": "Prepare CSV",
+        "func": "var originalPayload = msg.payload;\n\nvar newPayload = {};\n\nnewPayload.timestamp   = msg.timestamp;\nnewPayload.client_ip   = msg.client_ip;\nnewPayload.session_id  = msg.session_id;\nnewPayload.basket_id   = msg.basket_id;\nnewPayload.shipping_id = msg.shipping_id;\nnewPayload.action      = msg.action;\nnewPayload.stage       = msg.stage;\nnewPayload.product_id  = msg.product_id;\nnewPayload.country     = msg.country;\n\n\nmsg.payload = newPayload\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 610,
+        "y": 300,
+        "wires": [
+            [
+                "69b4c636.bffd88"
+            ]
+        ]
+    },
+    {
+        "id": "69b4c636.bffd88",
+        "type": "csv",
+        "z": "b381444b.015aa8",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\r",
+        "temp": "timestamp, shipping_id, action, stage, product_id, country",
+        "skip": "0",
+        "x": 770,
+        "y": 300,
+        "wires": [
+            [
+                "822e6fd1.c450a"
+            ]
+        ]
+    },
+    {
+        "id": "822e6fd1.c450a",
+        "type": "file",
+        "z": "b381444b.015aa8",
+        "name": "",
+        "filename": "/Users/tomm/Downloads/retail/retail_delivery.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "x": 1060,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d5d0488c.c9e678",
+        "type": "function",
+        "z": "7587ee11.aa269",
+        "name": "Prepare CSV",
+        "func": "var originalPayload = msg.payload;\n\nvar newPayload = {};\n\nnewPayload.timestamp   = msg.timestamp;\nnewPayload.client_ip   = msg.client_ip;\nnewPayload.session_id  = msg.session_id;\nnewPayload.basket_id   = msg.basket_id;\nnewPayload.shipping_id = msg.shipping_id;\nnewPayload.action      = msg.action;\nnewPayload.stage       = msg.stage;\nnewPayload.product_id  = msg.product_id;\nnewPayload.country     = msg.country;\n\n\nmsg.payload = newPayload\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 120,
+        "wires": [
+            [
+                "12333bad.931664"
+            ]
+        ]
+    },
+    {
+        "id": "12333bad.931664",
+        "type": "csv",
+        "z": "7587ee11.aa269",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\r",
+        "temp": "timestamp, session_id, basket_id, action, stage, product_id, country",
+        "skip": "0",
+        "x": 830,
+        "y": 120,
+        "wires": [
+            [
+                "6983bd5d.57d754"
+            ]
+        ]
+    },
+    {
+        "id": "6983bd5d.57d754",
+        "type": "file",
+        "z": "7587ee11.aa269",
+        "name": "",
+        "filename": "/Users/tomm/Downloads/retail/retail_online_shop.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "x": 1130,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae004c29.7ffc6",
+        "type": "function",
+        "z": "14635859.ef9c28",
+        "name": "Prepare CSV",
+        "func": "var originalPayload = msg.payload;\n\nvar newPayload = {};\n\nnewPayload.timestamp   = msg.timestamp;\nnewPayload.client_ip   = msg.client_ip;\nnewPayload.session_id  = msg.session_id;\nnewPayload.basket_id   = msg.basket_id;\nnewPayload.shipping_id = msg.shipping_id;\nnewPayload.action      = msg.action;\nnewPayload.stage       = msg.stage;\nnewPayload.product_id  = msg.product_id;\nnewPayload.country     = msg.country;\n\n\nmsg.payload = newPayload\n\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 150,
+        "wires": [
+            [
+                "bae75627.bd1578"
+            ]
+        ]
+    },
+    {
+        "id": "bae75627.bd1578",
+        "type": "csv",
+        "z": "14635859.ef9c28",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "",
+        "multi": "one",
+        "ret": "\\r",
+        "temp": "timestamp,session_id, basket_id,shipping_id, action, stage, product_id, country",
+        "skip": "0",
+        "x": 560,
+        "y": 150,
+        "wires": [
+            [
+                "2ae56e7c.da16e2"
+            ]
+        ]
+    },
+    {
+        "id": "2ae56e7c.da16e2",
+        "type": "file",
+        "z": "14635859.ef9c28",
+        "name": "",
+        "filename": "/Users/tomm/Downloads/retail/retail_warehouse.csv",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "x": 860,
+        "y": 150,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40bf1f14.6f776",
+        "type": "function",
+        "z": "f16eab4e.a11b28",
+        "name": "Pay By Invoice",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =   10;\n\n\nmsg.action = \"Pay By Invoice\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "c7f295ce.4e3508"
+            ]
+        ]
+    },
+    {
+        "id": "b4a9b3a1.5ce94",
+        "type": "function",
+        "z": "f16eab4e.a11b28",
+        "name": "Pay with PayPal",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =   10;\n\n\nmsg.action = \"Pay with PayPal\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 780,
+        "y": 300,
+        "wires": [
+            [
+                "c7f295ce.4e3508"
+            ]
+        ]
+    },
+    {
+        "id": "cd78c784.27e6e8",
+        "type": "function",
+        "z": "3a2a8b1a.4b7394",
+        "name": "Pay with PayPal",
+        "func": "diff = 10;\n\nvar d1 = new Date(msg.timestamp)\nvar d2 = new Date();\n\nd2.setTime(d1.getTime() + (diff * 1000));\nmsg.timestamp = d2.toString();\n\nmsg.action = \"Pay with PayPal\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 860,
+        "y": 450,
+        "wires": [
+            [
+                "b69ca6d.1b5b358",
+                "9b3e5754.39f8b8"
+            ]
+        ]
+    },
+    {
+        "id": "b69ca6d.1b5b358",
+        "type": "subflow:8e826397.79246",
+        "z": "3a2a8b1a.4b7394",
+        "name": "",
+        "x": 1060,
+        "y": 510,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b3e5754.39f8b8",
+        "type": "subflow:7587ee11.aa269",
+        "z": "3a2a8b1a.4b7394",
+        "name": "",
+        "x": 1100,
+        "y": 570,
+        "wires": []
+    },
+    {
+        "id": "d3bf5fec.03158",
+        "type": "subflow:27d2cb9c.1a7874",
+        "z": "f16eab4e.a11b28",
+        "name": "",
+        "env": [],
+        "x": 810,
+        "y": 380,
+        "wires": [
+            [
+                "ecd669db.23c258"
+            ]
+        ]
+    },
+    {
+        "id": "82dfacd1.0450d",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Add Product in Basket",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =   10;\nmsg.wait_random_max =  120;\n\n\nproduct_id = generateRandomNumber(1,20);\n\nmsg.action     = \"Add Product\";\nmsg.stage      = \"Online Shop\";\nmsg.product_id = product_id;\nmsg.quantity   = generateRandomNumber(1,4);\nmsg.basket_id  = \"B-\" + (10000 + msg.gcount);\n\nmsg.products_in_basket += 1;\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1020,
+        "y": 400,
+        "wires": [
+            [
+                "fb443858.cb8988"
+            ]
+        ]
+    },
+    {
+        "id": "98fa1769.be79f8",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Inform about Delay",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =    3;\n\nmsg.action = \"Inform about delay\"\nmsg.stage  = \"Fullfilment\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "1e0f0f51.4780b1"
+            ]
+        ]
+    },
+    {
+        "id": "9d0b7be1.2045c8",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Assign Shipping ID",
+        "func": "msg.wait_time_ms =  3600000;\nmsg.wait_random_min =     2;\nmsg.wait_random_max =     6;\n\n\nif(msg.further_path != \"Inform about delay\"){\n    msg.wait_time_ms =    60000;\n    msg.wait_random_min =     5;\n    msg.wait_random_max =    15;\n} \n\nmsg.action = \"Shipping ID Assigned\";\nmsg.stage = \"Fullfilment\";\nmsg.basket_id = \"\"\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 710,
+        "y": 500,
+        "wires": [
+            [
+                "b9f1caeb.33f108"
+            ]
+        ]
+    },
+    {
+        "id": "ee5558a6.c4b118",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Prepare Package for Shipping",
+        "func": "msg.wait_time_ms =    60000;\nmsg.wait_random_min =     1;\nmsg.wait_random_max =     5;\n\n\nmsg.action = \"Prepare for Delivery\";\nmsg.stage = \"Fullfilment\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1150,
+        "y": 500,
+        "wires": [
+            [
+                "e6a973.0ec1369"
+            ]
+        ]
+    },
+    {
+        "id": "f18d3a2.d4b8cc8",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Offer Cancelation",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    2;\nmsg.wait_random_max =    8;\n\n\nmsg.action = \"Offer Cancelation\";\nmsg.stage  = \"Fullfilment\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "299e579a.d85f38"
+            ]
+        ]
+    },
+    {
+        "id": "9b247ed1.f84fc",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Does Customer Cancel?",
+        "func": "diff = generateRandomNumber(1,5);\n\nmsg.customer_cancels = 0;\n\nvar options = generateRandomNumber(0,100);\n\nif(options >= 65)\n    msg.customer_cancels = 1;\n \n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1030,
+        "y": 160,
+        "wires": [
+            [
+                "870f5d29.49b54"
+            ]
+        ]
+    },
+    {
+        "id": "870f5d29.49b54",
+        "type": "switch",
+        "z": "3d5034ff.69fedc",
+        "name": "Canceled?",
+        "property": "customer_cancels",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 1250,
+        "y": 160,
+        "wires": [
+            [
+                "56ea2ba3.d49e44"
+            ],
+            [
+                "867410e8.60b24"
+            ]
+        ]
+    },
+    {
+        "id": "56ea2ba3.d49e44",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Order Canceled",
+        "func": "msg.wait_time_ms =   3600000;  //hours\nmsg.wait_random_min =      1;\nmsg.wait_random_max =     24;\n\n\nmsg.action = \"Order Canceled\";\nmsg.stage = \"Fullfilment\";\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1440,
+        "y": 100,
+        "wires": [
+            [
+                "20e2e0c3.bd705"
+            ]
+        ]
+    },
+    {
+        "id": "867410e8.60b24",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Customer waits for Fulfillment",
+        "func": "msg.wait_time_ms =  86400000;  //days\nmsg.wait_random_min =      1;\nmsg.wait_random_max =      3;\n\n\nmsg.action = \"Customer waits for fullfilment\";\nmsg.stage  = \"Fullfilment\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1090,
+        "y": 260,
+        "wires": [
+            [
+                "92fafa0.d917308"
+            ]
+        ]
+    },
+    {
+        "id": "80abf982.4a7428",
+        "type": "function",
+        "z": "3d5034ff.69fedc",
+        "name": "Recommend Alternative",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =    3;\n\n\nmsg.action = \"Recommend Alternative\"\nmsg.stage  = \"Fullfilment\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 180,
+        "wires": [
+            [
+                "2ed3e89b.718308"
+            ]
+        ]
+    },
+    {
+        "id": "4da70154.1898f",
+        "type": "function",
+        "z": "8e826397.79246",
+        "name": "write Headers",
+        "func": "node.warn(\"Deleting target file...\")\n\nmsg.payload = [\n    \"timestamp\",\n    \"client_ip\",\n    \"session_id\",\n    \"source_system\",\n    \"action\",\n    \"basket_id\",\n    \"product_id\",\n    \"quantity\",\n    \"order_id\",\n    \"shipping_id\",\n    \"duration_ms\"\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 200,
+        "wires": [
+            [
+                "44f2daee.548624"
+            ]
+        ]
+    },
+    {
+        "id": "def5df4d.e807",
+        "type": "comment",
+        "z": "8e826397.79246",
+        "name": "if the file does not exist, re-write the headers",
+        "info": "",
+        "x": 570,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6a2dadf3.944734",
+        "type": "fs-ops-access",
+        "z": "8e826397.79246",
+        "name": "Target File exists?",
+        "path": "/Users/tomm/Downloads",
+        "pathType": "str",
+        "filename": "retail.csv",
+        "filenameType": "str",
+        "read": true,
+        "write": true,
+        "throwerror": false,
+        "x": 270,
+        "y": 140,
+        "wires": [
+            [
+                "7cdf3ce0.f51bd4"
+            ],
+            [
+                "4da70154.1898f"
+            ]
+        ]
+    },
+    {
+        "id": "ca1b2870.c827b8",
+        "type": "function",
+        "z": "10c44a3.64f0db6",
+        "name": "Login into WebShop",
+        "func": "msg.wait_time_ms =       0;\nmsg.wait_random_min =    0;\nmsg.wait_random_max =    0;\n\nmsg.action             = \"Login to Web-Shop\";\nmsg.products_in_basket = 0;\nmsg.basket_id          = \"\";\nmsg.stage              = \"Online Shop\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 560,
+        "y": 160,
+        "wires": [
+            [
+                "81905e67.ce56c"
+            ]
+        ]
+    },
+    {
+        "id": "81905e67.ce56c",
+        "type": "subflow:8e826397.79246",
+        "z": "10c44a3.64f0db6",
+        "name": "",
+        "env": [],
+        "x": 790,
+        "y": 160,
+        "wires": [
+            [
+                "d03a43b.852e8c"
+            ]
+        ]
+    },
+    {
+        "id": "d3e155cf.54d5c8",
+        "type": "subflow:10c44a3.64f0db6",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "env": [],
+        "x": 880,
+        "y": 260,
+        "wires": [
+            [
+                "285d452c.18aeda"
+            ]
+        ]
+    },
+    {
+        "id": "d03a43b.852e8c",
+        "type": "subflow:67b43599.32cc2c",
+        "z": "10c44a3.64f0db6",
+        "name": "",
+        "env": [],
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "5e9854ea.2dbb7c"
+            ]
+        ]
+    },
+    {
+        "id": "5e9854ea.2dbb7c",
+        "type": "subflow:f16eab4e.a11b28",
+        "z": "10c44a3.64f0db6",
+        "name": "",
+        "env": [],
+        "x": 1310,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5abcad47.d634b4",
+        "type": "switch",
+        "z": "67b43599.32cc2c",
+        "name": "logged out?",
+        "property": "logout",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 570,
+        "y": 60,
+        "wires": [
+            [
+                "1dadb6.c828124a"
+            ],
+            [
+                "eecc2fdd.ec74c"
+            ]
+        ]
+    },
+    {
+        "id": "f3917339.a3222",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "logged out?",
+        "func": "var help = 0\nhelp = generateRandomNumber(0,100);\n\nif(help >= 93 )\n    msg.logout = 1;\nelse\n    msg.logout = 0;\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "5abcad47.d634b4"
+            ]
+        ]
+    },
+    {
+        "id": "c7325fff.a6593",
+        "type": "debug",
+        "z": "8e826397.79246",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 1330,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "501e402c.50c07",
+        "type": "switch",
+        "z": "9f4c332c.51f92",
+        "name": "check journey counter",
+        "property": "gcount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "3000",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 560,
+        "y": 260,
+        "wires": [
+            [
+                "d3e155cf.54d5c8"
+            ],
+            [
+                "67437272.e3bedc"
+            ]
+        ]
+    },
+    {
+        "id": "6de7aed8.999c2",
+        "type": "function",
+        "z": "9f4c332c.51f92",
+        "name": "reset gcount = 0",
+        "func": "global.set('gcount',0);\n\nnode.warn(\"Journey Count = 0;\")\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "6221331a.90bd6c"
+            ]
+        ]
+    },
+    {
+        "id": "b79d8d3f.19509",
+        "type": "inject",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "6de7aed8.999c2"
+            ]
+        ]
+    },
+    {
+        "id": "1ef7251e.964e2b",
+        "type": "comment",
+        "z": "9f4c332c.51f92",
+        "name": "Use this trigger to reset & clear the output file",
+        "info": "",
+        "x": 210,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "2fc0aa0d.1d5076",
+        "type": "comment",
+        "z": "9f4c332c.51f92",
+        "name": "Set  this counter = number of journeys",
+        "info": "",
+        "x": 590,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "91aa5d23.8ed6",
+        "type": "function",
+        "z": "67b43599.32cc2c",
+        "name": "Checkout",
+        "func": "msg.wait_time_ms =    1000;\nmsg.wait_random_min =    1;\nmsg.wait_random_max =    2;\n\n\nmsg.action = \"Checkout\";\nmsg.stage = \"Online Shop\";\nmsg.product_id = \"\"\nmsg.quantity   = \"\";\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 720,
+        "y": 780,
+        "wires": [
+            [
+                "e14c4619.64eab8"
+            ]
+        ]
+    },
+    {
+        "id": "7cdf3ce0.f51bd4",
+        "type": "function",
+        "z": "8e826397.79246",
+        "name": "set Timestamp & output fields",
+        "func": "\n//  Set the timestamp for this step using the msg.wait_time_ms and any needed randomness)\nvar delay = generateRandomNumber(msg.wait_random_min, msg.wait_random_max);\nmsg.duration_ms = msg.wait_time_ms * delay;  \n\n\n// for testing set every duration to 1 second, it's easy to view in the debug ;-)\n//msg.duration_ms = 1000;\n\n\n// increment the last timestamp for this step's duration\nvar ts = new Date(msg.payload.timestamp);\nts.setTime( ts.getTime() + (msg.duration_ms) );\n\nmsg.payload.timestamp   = ts;\n\n// set the msg.payload from the msg. variables\nmsg.payload.basket_id   = msg.basket_id;\nmsg.payload.order_id    = msg.order_id;\nmsg.payload.shipping_id = msg.shipping_id;\nmsg.payload.action      = msg.action;\nmsg.payload.stage       = msg.stage;\nmsg.payload.product_id  = msg.product_id;\nmsg.payload.quantity    = msg.quantity;\nmsg.payload.duration_ms = msg.duration_ms;\n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 100,
+        "wires": [
+            [
+                "44f2daee.548624"
+            ]
+        ]
+    },
+    {
+        "id": "6221331a.90bd6c",
+        "type": "fs-ops-delete",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "path": "/Users/tomm/Downloads",
+        "pathType": "str",
+        "filename": "retail.csv",
+        "filenameType": "str",
+        "x": 530,
+        "y": 100,
+        "wires": [
+            [
+                "b64b011c.a80cb"
+            ]
+        ]
+    },
+    {
+        "id": "b64b011c.a80cb",
+        "type": "subflow:8e826397.79246",
+        "z": "9f4c332c.51f92",
+        "name": "",
+        "env": [],
+        "x": 770,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a25a0189.eb4d2",
+        "type": "comment",
+        "z": "9f4c332c.51f92",
+        "name": "Use this trigger to create journeys",
+        "info": "",
+        "x": 180,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fcbfe87a.848218",
+        "type": "data-generator",
+        "z": "10c44a3.64f0db6",
+        "name": "Initialize Journey",
+        "field": "payload",
+        "fieldType": "msg",
+        "syntax": "text",
+        "template": "{   \"timestamp\": \"{{date '2019-01-10' '2020-03-09' 'YYYY-MM-DD'}}T{{time '00:00:00' '23:59:59' 'hh:mm:ss'}}Z\",\n    \"client_ip\": \"{{ipv4}}\",\n    \"session_id\": \"{{guid}}\",\n    \"country\": \"{{country}}\"\n}",
+        "x": 190,
+        "y": 60,
+        "wires": [
+            [
+                "8213f9f9.227828"
+            ]
+        ]
+    },
+    {
+        "id": "42dd25e6.03174c",
+        "type": "function",
+        "z": "9f4c332c.51f92",
+        "name": "init loop counter",
+        "func": "// global variable to count the number of journeys created\nvar gcount=global.get('gcount') || 0;\ngcount++;\nglobal.set('gcount',gcount);\nmsg.gcount = gcount;\n\nnode.warn(\"Starting Journey number: \" + msg.gcount);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "501e402c.50c07"
+            ]
+        ]
+    },
+    {
+        "id": "6f8cdb26.c8b0e4",
+        "type": "function",
+        "z": "8e826397.79246",
+        "name": "Select elements to write",
+        "func": "// Now Pick the fields we want to write out.\nvar originalPayload = msg.payload;\n\nvar newPayload = {};\n\n//newPayload.timestamp   = global.get('gtimestamp');\nnewPayload.timestamp   = msg.payload.timestamp;\nnewPayload.client_ip   = msg.payload.client_ip;\nnewPayload.session_id  = msg.payload.session_id;\nnewPayload.basket_id   = msg.basket_id;\nnewPayload.order_id    = msg.order_id;\nnewPayload.shipping_id = msg.shipping_id;\nnewPayload.action      = msg.action;\nnewPayload.stage       = msg.stage;\nnewPayload.product_id  = msg.product_id;\n//newPayload.country     = msg.country;\nnewPayload.duration_ms = msg.duration_ms;\n\nmsg.payload = newPayload\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 490,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8213f9f9.227828",
+        "type": "function",
+        "z": "10c44a3.64f0db6",
+        "name": "convert to JSON & set timestamp",
+        "func": "msg.payload = JSON.parse(msg.payload);\n\nglobal.set('gtimestamp',msg.payload.timestamp);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 160,
+        "wires": [
+            [
+                "ca1b2870.c827b8"
+            ]
+        ]
+    },
+    {
+        "id": "4212824.b28867c",
+        "type": "comment",
+        "z": "8e826397.79246",
+        "name": "write data to the file",
+        "info": "",
+        "x": 570,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1057e441.505f1c",
+        "type": "data-generator",
+        "z": "3d5034ff.69fedc",
+        "name": "shipping id",
+        "field": "shipping_id",
+        "fieldType": "msg",
+        "syntax": "text",
+        "template": "S-{{int 0 9999}}-{{int 0 900}}-{{int 0 999}}",
+        "x": 510,
+        "y": 420,
+        "wires": [
+            [
+                "9d0b7be1.2045c8"
+            ]
+        ]
+    },
+    {
+        "id": "67437272.e3bedc",
+        "type": "function",
+        "z": "9f4c332c.51f92",
+        "name": "STOP Executing",
+        "func": "node.warn(\"all finished, just looping now \" + msg.gcount);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 340,
+        "wires": [
+            [
+                "425dc9ff.05d048"
+            ]
+        ]
+    },
+    {
+        "id": "425dc9ff.05d048",
+        "type": "exit",
+        "z": "9f4c332c.51f92",
+        "name": "Use this to stop node-red completely",
+        "exitcode": "0",
+        "x": 990,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6af932d2.41b5ac",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Customer Return?",
+        "func": "\nvar options = generateRandomNumber(0,100);\n\nif(options >= 94)\n    msg.cust_return = 1\nelse \n    msg.cust_return = 0\n \n\nreturn msg;\n\n\nfunction generateRandomNumber(min_value , max_value) \n{\n    return Math.floor(Math.random() * (max_value-min_value) + min_value) ;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 600,
+        "wires": [
+            [
+                "66c95f16.880ad"
+            ]
+        ]
+    },
+    {
+        "id": "66c95f16.880ad",
+        "type": "switch",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "property": "cust_return",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 600,
+        "wires": [
+            [
+                "d97fb278.f2cb7"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f72f5da7.ac6c9",
+        "type": "subflow:8e826397.79246",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "env": [],
+        "x": 890,
+        "y": 120,
+        "wires": [
+            [
+                "f8af4060.f2a7"
+            ]
+        ]
+    },
+    {
+        "id": "6ee47739.349ba8",
+        "type": "subflow:8e826397.79246",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "env": [],
+        "x": 1070,
+        "y": 220,
+        "wires": [
+            [
+                "2954489e.fc57d8"
+            ]
+        ]
+    },
+    {
+        "id": "fb443858.cb8988",
+        "type": "subflow:8e826397.79246",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "env": [],
+        "x": 1230,
+        "y": 400,
+        "wires": [
+            [
+                "625293fe.198b4c"
+            ]
+        ]
+    },
+    {
+        "id": "e14c4619.64eab8",
+        "type": "subflow:8e826397.79246",
+        "z": "67b43599.32cc2c",
+        "name": "",
+        "env": [],
+        "x": 910,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62798309.e701cc",
+        "type": "subflow:8e826397.79246",
+        "z": "f16eab4e.a11b28",
+        "name": "",
+        "env": [],
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "e1438909.c88bb8"
+            ]
+        ]
+    },
+    {
+        "id": "be2dfff4.befb4",
+        "type": "subflow:8e826397.79246",
+        "z": "f16eab4e.a11b28",
+        "name": "",
+        "env": [],
+        "x": 1450,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ea3c6093.dd4e1",
+        "type": "subflow:8e826397.79246",
+        "z": "27d2cb9c.1a7874",
+        "name": "",
+        "env": [],
+        "x": 650,
+        "y": 80,
+        "wires": [
+            [
+                "1e7fde49.a6b292"
+            ]
+        ]
+    },
+    {
+        "id": "289956fd.23552a",
+        "type": "subflow:8e826397.79246",
+        "z": "27d2cb9c.1a7874",
+        "name": "",
+        "env": [],
+        "x": 1370,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fb766a8.fd28e8",
+        "type": "subflow:8e826397.79246",
+        "z": "27d2cb9c.1a7874",
+        "name": "",
+        "env": [],
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "9eaa3a0.edb04c8"
+            ]
+        ]
+    },
+    {
+        "id": "a03b4409.b0fe68",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 530,
+        "y": 60,
+        "wires": [
+            [
+                "427b3b10.f83cf4"
+            ]
+        ]
+    },
+    {
+        "id": "299e579a.d85f38",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 770,
+        "y": 140,
+        "wires": [
+            [
+                "9b247ed1.f84fc"
+            ]
+        ]
+    },
+    {
+        "id": "2ed3e89b.718308",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 770,
+        "y": 180,
+        "wires": [
+            [
+                "9b247ed1.f84fc"
+            ]
+        ]
+    },
+    {
+        "id": "1e0f0f51.4780b1",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "env": [],
+        "x": 770,
+        "y": 220,
+        "wires": [
+            [
+                "1057e441.505f1c"
+            ]
+        ]
+    },
+    {
+        "id": "20e2e0c3.bd705",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 1650,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "92fafa0.d917308",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "env": [],
+        "x": 990,
+        "y": 340,
+        "wires": [
+            [
+                "1057e441.505f1c"
+            ]
+        ]
+    },
+    {
+        "id": "b9f1caeb.33f108",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 910,
+        "y": 500,
+        "wires": [
+            [
+                "ee5558a6.c4b118"
+            ]
+        ]
+    },
+    {
+        "id": "e28c91bb.8b25",
+        "type": "subflow:8e826397.79246",
+        "z": "3d5034ff.69fedc",
+        "name": "",
+        "x": 1390,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1b23fbb.28919",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "52416939.d34728"
+            ]
+        ]
+    },
+    {
+        "id": "92a5bdfc.60118",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "x": 690,
+        "y": 200,
+        "wires": [
+            [
+                "42fbbb0f.392724"
+            ]
+        ]
+    },
+    {
+        "id": "f72aed88.83c1d",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "x": 710,
+        "y": 260,
+        "wires": [
+            [
+                "5153e684.812608"
+            ]
+        ]
+    },
+    {
+        "id": "27a6f085.2b7d2",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "x": 730,
+        "y": 600,
+        "wires": [
+            [
+                "6af932d2.41b5ac"
+            ]
+        ]
+    },
+    {
+        "id": "33ad9fc7.10276",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "x": 810,
+        "y": 340,
+        "wires": [
+            [
+                "86be0afc.249668"
+            ]
+        ]
+    },
+    {
+        "id": "7ff8f259.e8789c",
+        "type": "subflow:8e826397.79246",
+        "z": "a68c337.ac348d",
+        "name": "",
+        "x": 770,
+        "y": 540,
+        "wires": [
+            [
+                "d46a4205.3e03f"
+            ]
+        ]
+    },
+    {
+        "id": "d97fb278.f2cb7",
+        "type": "function",
+        "z": "a68c337.ac348d",
+        "name": "Customer Returns",
+        "func": "msg.wait_time_ms =  86400000;    //1 day\nmsg.wait_random_min =      2;\nmsg.wait_random_max =      6;\n\nmsg.action = \"Customer Return\";\nmsg.stage  = \"Delivery\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1310,
+        "y": 600,
+        "wires": [
+            [
+                "97c2ae44.1df1c"
+            ]
+        ]
+    }
+]

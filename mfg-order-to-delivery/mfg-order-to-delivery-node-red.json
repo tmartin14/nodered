@@ -1,0 +1,1248 @@
+[
+    {
+        "id": "ab051ff7.d5517",
+        "type": "tab",
+        "label": "Ordering",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "156e879b.66d3c8",
+        "type": "subflow",
+        "name": "Payment Gateway",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "b16e550c.74d438"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1020,
+                "y": 460,
+                "wires": [
+                    {
+                        "id": "a8cc6f17.d3779",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d225b504.fc3778",
+        "type": "subflow",
+        "name": "Manufacturing",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 50,
+                "y": 30,
+                "wires": [
+                    {
+                        "id": "629963dd.0731dc"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1140,
+                "y": 720,
+                "wires": [
+                    {
+                        "id": "9264da7.a620928",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "4735b1fb.3bbc4",
+        "type": "subflow",
+        "name": "Vehicle Delivery",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 60,
+                "wires": [
+                    {
+                        "id": "37cb9e0a.38aee2"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 920,
+                "y": 400,
+                "wires": [
+                    {
+                        "id": "b28b9fca.81b1e",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "22fa55cd.626aba",
+        "type": "inject",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 140,
+        "wires": [
+            [
+                "1b2f8bb9.898254"
+            ]
+        ]
+    },
+    {
+        "id": "3b2f221e.4957ce",
+        "type": "debug",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 990,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "a3363173.73872",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Login",
+        "func": "var min = 1000;\nvar max = 5000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Login\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "a94a4965.a17068",
+                "bc8a3c6.94decc"
+            ]
+        ]
+    },
+    {
+        "id": "35e12216.dc3b4e",
+        "type": "uuid",
+        "z": "ab051ff7.d5517",
+        "uuidVersion": "v4",
+        "namespaceType": "custom",
+        "namespace": "",
+        "namespaceCustom": "",
+        "name": "userid",
+        "field": "payload.userid",
+        "fieldType": "msg",
+        "x": 630,
+        "y": 140,
+        "wires": [
+            [
+                "a3363173.73872"
+            ]
+        ]
+    },
+    {
+        "id": "1b2f8bb9.898254",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "intialize",
+        "func": "// global variable to count the number of journeys created\n\nvar gcount=global.get('gcount') || 0;\ngcount++;\nglobal.set('gcount',gcount);\nmsg.gcount = gcount;\n\nmsg.payload = {}\nmsg.payload.sourceSystem = \"ORDERING\";\n\n\n\n//for the first 350 let's make sure the date is in Q4\nvar start_date = new Date(2019, 8, 8);   //use (2019, 8, 8) to generate data for Oct (Q4)\nif(gcount > 350){\n    //  The remaining journeys will spread across the calendar yer\n    start_date = new Date(2019, 0, 1);   \n}\n\n\n//Prevent Future Dates.  Allow enough time so the process finishes by today's date\n//  In our case 35 days should be sufficient\nvar max_date   = new Date();\nmax_date.setDate(max_date.getDate()-35);  \n\nmsg.payload.timestamp = getRandomDate( start_date, max_date);\n\nreturn msg;\n\n\n\nfunction getRandomDate(from,to) {\n    \n    if (!from) {  from = new Date(2019, 0, 1).getTime();  \n    } else {  from = from.getTime(); }\n    \n    if (!to)   {    to = new Date(2019, 9, 1).getTime();\n    } else {  to = to.getTime();  }\n    \n\n    return new Date(from + Math.random() * (to - from));\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            [
+                "48a37493.3d474c",
+                "8ed28b22.8a8468"
+            ]
+        ]
+    },
+    {
+        "id": "a94a4965.a17068",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Select Model",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min = 3000;\nvar max = 30000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Select Model\";\n\nmsg.payload.model     = \"Pony\";\nif(delay_ms > 10000){\n    msg.payload.model = \"Mustang\"\n}\nif(delay_ms > 20000){\n    msg.payload.model = \"Philly\"\n}\n\nmsg.model = msg.payload.model;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 280,
+        "wires": [
+            [
+                "ca804817.bb8ef8",
+                "bc8a3c6.94decc"
+            ]
+        ]
+    },
+    {
+        "id": "ca804817.bb8ef8",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Select Trim",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min = 3000;\nvar max = 30000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Select Trim\";\n\nmsg.payload.trim      = \"BASE\";\nif(delay_ms > 10000){\n    msg.payload.trim = \"EX\"\n}\nif(delay_ms > 20000){\n    msg.payload.trim = \"LX\"\n}\n\n//save this step's attribute(s)\nmsg.trim  = msg.payload.trim;\n\n//delete the last step's attribute(s)\ndelete msg.payload.model;\n\n//Set defaults for the next steps' attributes\nmsg.color        = \"White\";\nmsg.interior     = \"Cloth\";\nmsg.battery_type = \"Standard Range\";\n\n\n//setup for the next step, we'll use this for the switch\nvar min1 = 1;\nvar max1 = 4;\nvar num = Math.floor(Math.random() * (max1-min1) + min1) ;\n\nmsg.choice = num;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 360,
+        "wires": [
+            [
+                "bc8a3c6.94decc",
+                "164ee0b3.74ce9f"
+            ]
+        ]
+    },
+    {
+        "id": "bc8a3c6.94decc",
+        "type": "file",
+        "z": "ab051ff7.d5517",
+        "name": "conf19-1.ordering.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-1.ordering.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1120,
+        "y": 560,
+        "wires": [
+            [
+                "a3367966.43b208"
+            ]
+        ]
+    },
+    {
+        "id": "164ee0b3.74ce9f",
+        "type": "switch",
+        "z": "ab051ff7.d5517",
+        "name": "Option Selections",
+        "property": "choice",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 4,
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "a4f6134b.7f22c"
+            ],
+            [
+                "e6b0c1dd.203bd"
+            ],
+            [
+                "ec8125bc.508c08"
+            ],
+            [
+                "37e272eb.474f3e"
+            ]
+        ]
+    },
+    {
+        "id": "a4f6134b.7f22c",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Battery Options",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min = 10000;\nvar max = 30000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Battery Options\";\n\nmsg.payload.sel_battery_type      = \"Extended Range\";\nif(delay_ms < 14000){\nmsg.payload.sel_battery_type      = \"Standard Range\";\n}\n\n\n//save the option choices\nmsg.battery_type = msg.payload.sel_battery_type;\n\ndelete msg.payload.trim;\ndelete msg.payload.sel_color;\ndelete msg.payload.sel_interior;\n\n\n//setup for the next step, we'll use this for the switch\nvar min1 = 0;\nvar max1 = 4;\nvar num = Math.floor(Math.random() * (max1-min1) + min1) ;\n\nmsg.choice = num;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 500,
+        "wires": [
+            [
+                "bc8a3c6.94decc",
+                "164ee0b3.74ce9f"
+            ]
+        ]
+    },
+    {
+        "id": "e6b0c1dd.203bd",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Interior Options",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min = 10000;\nvar max = 30000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Interior Options\";\n\nmsg.payload.sel_interior  = \"Leather\";\nif(delay_ms > 22000){\n    msg.payload.sel_interior = \"Cloth\";\n}\n\n\n//save the option choices\nmsg.interior = msg.payload.sel_interior;\n\ndelete msg.payload.trim;\ndelete msg.payload.sel_battery_type;\ndelete msg.payload.sel_color;\n\n\n\n//setup for the next step, we'll use this for the switch\nvar min1 = 0;\nvar max1 = 4;\nvar num = Math.floor(Math.random() * (max1-min1) + min1) ;\n\nmsg.choice = num;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "164ee0b3.74ce9f",
+                "bc8a3c6.94decc"
+            ]
+        ]
+    },
+    {
+        "id": "ec8125bc.508c08",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Exterior Options",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min = 10000;\nvar max = 30000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Exterior Options\";\n\nmsg.payload.sel_color     = \"White\";\nif(delay_ms > 15000){\n    msg.payload.sel_color = \"Red\";\n}\nif(delay_ms > 22000){\n    msg.payload.sel_color = \"Blue\";\n}\n\n//save the option choices\nmsg.color = msg.payload.sel_color;\n\ndelete msg.payload.trim;\ndelete msg.payload.sel_battery_type;\ndelete msg.payload.sel_interior;\n\n\n//setup for the next step, we'll use this for the switch\nvar min1 = 0;\nvar max1 = 4;\nvar num = Math.floor(Math.random() * (max1-min1) + min1) ;\n\nmsg.choice = 4;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 640,
+        "wires": [
+            [
+                "164ee0b3.74ce9f",
+                "bc8a3c6.94decc"
+            ]
+        ]
+    },
+    {
+        "id": "37e272eb.474f3e",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Financing",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min =  60000;\nvar max = 600000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Financing\";\nmsg.payload.creditScore = Math.floor(Math.random() * (830-400) + 400);\nmsg.payload.FinancingStatus = \"Approved\";\n\nif(msg.payload.creditScore < 450){\n    msg.payload.FinancingStatus = \"Rejected\";\n}\n\n\ndelete msg.payload.trim;\ndelete msg.payload.sel_color;\ndelete msg.payload.sel_interior;\ndelete msg.payload.sel_battery_type;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "bc8a3c6.94decc",
+                "b534111a.d53b7"
+            ]
+        ]
+    },
+    {
+        "id": "3cb21cbf.73f7f4",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Review Order",
+        "func": "\n//reset the timestamp for a random amount of time after the previous step\nvar min =  10000;\nvar max =  20000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Review Order\";\n\ndelete msg.payload.creditScore;\ndelete msg.payload.FinancingStatus;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 440,
+        "y": 860,
+        "wires": [
+            [
+                "81d1da96.a5abb8",
+                "bc8a3c6.94decc"
+            ]
+        ]
+    },
+    {
+        "id": "b534111a.d53b7",
+        "type": "switch",
+        "z": "ab051ff7.d5517",
+        "name": "Finance Approval?",
+        "property": "payload.FinancingStatus",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "Approved",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Approved",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 250,
+        "y": 800,
+        "wires": [
+            [
+                "e0be61e7.140e9"
+            ],
+            [
+                "3cb21cbf.73f7f4"
+            ]
+        ]
+    },
+    {
+        "id": "e0be61e7.140e9",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Order Rejected",
+        "func": "\n//reset the timestamp for a random amount of time after the previous step\nvar min =  3000;\nvar max =  5000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Order Rejected\";\nmsg.payload.RejectionReason = \"Credit Score too low\";\n\ndelete msg.payload.creditScore;\ndelete msg.payload.FinancingStatus;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 460,
+        "y": 780,
+        "wires": [
+            [
+                "bc8a3c6.94decc"
+            ]
+        ]
+    },
+    {
+        "id": "81d1da96.a5abb8",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Order Submitted",
+        "func": "\n//reset the timestamp for a random amount of time after the previous step\nvar min =   5000;\nvar max =  40000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Order Sumbitted\";\n//msg.payload.orderNo   = \"ORD_\" + Math.floor(Math.random() * (99999-10000) + 10000);\nmsg.payload.orderNo   = \"ORD_\" + new_time.getTime();\n\nmsg.payload.model        = msg.model;\nmsg.payload.trim         = msg.trim;\nmsg.payload.color        = msg.color;\nmsg.payload.interior     = msg.interior;\nmsg.payload.battery_type = msg.battery_type;\n\ndelete msg.payload.sel_interior;\ndelete msg.payload.sel_color;\ndelete msg.payload.sel_battery_type;\n\n//save for Later\nmsg.userid  = msg.payload.userid;\nmsg.orderNo = msg.payload.orderNo;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 900,
+        "wires": [
+            [
+                "3b2f221e.4957ce",
+                "bc8a3c6.94decc",
+                "26521bbf.80ccc4"
+            ]
+        ]
+    },
+    {
+        "id": "b16e550c.74d438",
+        "type": "function",
+        "z": "156e879b.66d3c8",
+        "name": "Review Down Payment",
+        "func": "msg.payload.sourceSystem = \"PAYMENTS\";\n\n//reset the timestamp for a random amount of time after the previous step\nvar minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 1 * days;\nvar max = 3 * days;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action = \"Review Downpayment\";\nmsg.payload.downPayment = 2500.00;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 230,
+        "y": 60,
+        "wires": [
+            [
+                "5b0208d4.2dce98",
+                "702e3417.d705cc"
+            ]
+        ]
+    },
+    {
+        "id": "260e9253.d1415e",
+        "type": "subflow:156e879b.66d3c8",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "x": 630,
+        "y": 1000,
+        "wires": [
+            [
+                "335c934d.6a334c"
+            ]
+        ]
+    },
+    {
+        "id": "26521bbf.80ccc4",
+        "type": "function",
+        "z": "ab051ff7.d5517",
+        "name": "Clear Ordering details",
+        "func": "\ndelete msg.payload.userid;\ndelete msg.payload.model;\ndelete msg.payload.trim;\ndelete msg.payload.color;\ndelete msg.payload.interior;\ndelete msg.payload.battery_type;\n\ndelete msg.model;\ndelete msg.trim;\ndelete msg.color;\ndelete msg.interior;\n//delete msg.battery_type;   --> need this one for the manufacturing flow\n// leaving msg.payload.orderNo  --> need this one for manufactureing flow too\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 1000,
+        "wires": [
+            [
+                "260e9253.d1415e"
+            ]
+        ]
+    },
+    {
+        "id": "faf6f5a3.537788",
+        "type": "function",
+        "z": "156e879b.66d3c8",
+        "name": "Submit Payment",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 1 * minutes;\nvar max = 3 * minutes;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Submit Payment\";\nmsg.payload.creditCardNo = \"9999-9999-9999-9999\";\n\nswitch (true) {\n    case (delay_ms < 4000):\n        msg.payload.type = \"AMEX\";\n        break;\n    case (delay_ms > 8000):\n        msg.payload.type = \"DISCOVER\";\n        break;\n    default:\n        msg.payload.type = \"VISA\";\n        break;\n}\n\ndelete msg.payload.downPayment;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "28fa4768.702b28",
+                "702e3417.d705cc"
+            ]
+        ]
+    },
+    {
+        "id": "28fa4768.702b28",
+        "type": "function",
+        "z": "156e879b.66d3c8",
+        "name": "Process Payment",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min = 10000;\nvar max = 60000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Process Payment\";\n\nmsg.payload.result = \"APPROVED\";\nvar num = Math.floor(Math.random() * (10-1) + 1);\n\nswitch (true) {\n    case (num == 7):\n        msg.payload.result = \"FAILED\";\n        msg.payload.reason = \"Transaction was not able to complete in the allotted time. FAILURE.\";\n        msg.num_tries++;\n        break;\n    case (num > 7):\n        msg.payload.result = \"REJECTED\";\n        msg.payload.reason = \"Card Rejected\";\n        msg.num_tries++;\n        break;\n    default:\n        msg.payload.result = \"APPROVED\";\n        delete msg.payload.reason;\n        break;\n}\n\nif(msg.num_tries >=4){\n    msg.payload.result = \"STOP\";\n}\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 330,
+        "y": 300,
+        "wires": [
+            [
+                "70e678be.1e1a78",
+                "702e3417.d705cc"
+            ]
+        ]
+    },
+    {
+        "id": "1351ffec.e131f",
+        "type": "function",
+        "z": "156e879b.66d3c8",
+        "name": "Payment Accepted",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 1 * minutes;\nvar max = 5 * minutes;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Payment Accepted\";\n\ndelete msg.payload.reason;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "702e3417.d705cc",
+                "a8cc6f17.d3779"
+            ]
+        ]
+    },
+    {
+        "id": "70e678be.1e1a78",
+        "type": "switch",
+        "z": "156e879b.66d3c8",
+        "name": "",
+        "property": "payload.result",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "APPROVED",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "STOP",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "FAILED",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "REJECTED",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 270,
+        "y": 440,
+        "wires": [
+            [
+                "1351ffec.e131f"
+            ],
+            [
+                "4cc6263a.e622a8"
+            ],
+            [
+                "faf6f5a3.537788"
+            ],
+            [
+                "faf6f5a3.537788"
+            ]
+        ]
+    },
+    {
+        "id": "5b0208d4.2dce98",
+        "type": "change",
+        "z": "156e879b.66d3c8",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "num_tries",
+                "pt": "msg",
+                "to": "0",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 210,
+        "y": 140,
+        "wires": [
+            [
+                "faf6f5a3.537788"
+            ]
+        ]
+    },
+    {
+        "id": "a3367966.43b208",
+        "type": "file",
+        "z": "ab051ff7.d5517",
+        "name": "conf19-0.total.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-0.total.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1310,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "702e3417.d705cc",
+        "type": "file",
+        "z": "156e879b.66d3c8",
+        "name": "conf19-2.payments.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-2.payments.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 910,
+        "y": 180,
+        "wires": [
+            [
+                "d5417646.6660c8"
+            ]
+        ]
+    },
+    {
+        "id": "91c5c294.20074",
+        "type": "debug",
+        "z": "156e879b.66d3c8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1130,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d5417646.6660c8",
+        "type": "file",
+        "z": "156e879b.66d3c8",
+        "name": "conf19-0.total.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-0.total.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1210,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "629963dd.0731dc",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Order Received",
+        "func": "msg.payload.sourceSystem = \"MANUFACTURING\";\n\nvar minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * days;\nvar max = 5 * days;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Assembly Order Received\";\n\n//TESLA base\n//msg.payload.VIN = \"5YJZEZE4AF\" + Math.floor(Math.random() * (999999-100000) + 100000);\nmsg.payload.VIN = \"VIN_\" + new_time.getTime();\n\n//save for Later\nmsg.vin = msg.payload.VIN;\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 140,
+        "wires": [
+            [
+                "ef7810bd.b4dea",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "ef7810bd.b4dea",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Chassis Assembled",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 6 * hours;\nvar max = 10 * hours;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Chassis Assembled\";\n\ndelete msg.payload.orderNo;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 200,
+        "wires": [
+            [
+                "733e43a7.0135dc",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "a8cc6f17.d3779",
+        "type": "function",
+        "z": "156e879b.66d3c8",
+        "name": "Clear Payment details",
+        "func": "\ndelete msg.payload.RejectionReason;\ndelete msg.payload.result;\ndelete msg.payload.type;\ndelete msg.payload.creditCardNo;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 820,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "733e43a7.0135dc",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Battery Install",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 1 * days;\nvar max = 2 * days;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Battery Install\";\nmsg.payload.battery_type = msg.battery_type;\n\n\n// controller type\nmsg.payload.chargeControllerModel = \"BCC-v11.05.12\";\nmsg.payload.battery_mfg = \"Enersys\";\nif(delay_ms > (1.5 * days)){\n    msg.payload.battery_mfg = \"LG Chem\";\n}\n\nif (msg.battery_type == \"Extended Range\"){\n    msg.payload.chargeControllerModel = \"BCC-v12.09.01\";\n    msg.payload.battery_mfg = \"Advanced Batteries\";    \n    \n    var month = new_time.getMonth()+1;   //add one to make it match the calendar numeric month\n\n    if(month > 7) {\n         msg.payload.chargeControllerModel = \"BCC-v12.09.03\";\n    }else{\n        if( month > 3){\n             msg.payload.chargeControllerModel = \"BCC-v12.09.02\";\n        }\n    }\n}\n\nmsg.controller = msg.payload.chargeControllerModel;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 260,
+        "wires": [
+            [
+                "2cf965d2.ce3eda",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "2cf965d2.ce3eda",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Body Attached",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 30 * minutes;\nvar max =  2 * hours;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Body Attached\";\n\ndelete msg.payload.chargeControllerModel;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "d2803ce1.79ebd",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "d2803ce1.79ebd",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Doors Completed",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 10 * hours;\nvar max = 24 * hours;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Doors Completed\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            [
+                "658b177d.e9cab8",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "658b177d.e9cab8",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Wheels installed",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * hours;\nvar max = 4 * hours;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Wheels installed\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "35ffd16f.ec3dfe",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "35ffd16f.ec3dfe",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Painting",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min =  30 * minutes;\nvar max =  60 * minutes;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Painting\";\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 220,
+        "y": 500,
+        "wires": [
+            [
+                "e522dbb7.8dad68",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "e522dbb7.8dad68",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Initial Quality Test",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * hours;\nvar max = 3 * hours;\n\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\nmsg.payload.timestamp  = new_time;\nmsg.payload.action     = \"QC Test - Initial\";\n\n\n//   97% of cars should pass inspection\nvar pct = 97;\n//  BUT if this is our special controller, then 90% should fail\nif(msg.controller == \"BCC-v12.09.03\"){\n    pct = 10;\n}\n\n// Everyone passes at first, then reset if needed.\nmsg.payload.testResult = \"PASSED\";\nif(Math.floor(Math.random() * (100-1) + 1) >= pct){\n    msg.payload.testResult = \"FAILURE\";\n}\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 230,
+        "y": 560,
+        "wires": [
+            [
+                "6954bb6b.fec394",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "6954bb6b.fec394",
+        "type": "switch",
+        "z": "d225b504.fc3778",
+        "name": "check test result",
+        "property": "payload.testResult",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "PASSED",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "FAILURE",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 240,
+        "y": 620,
+        "wires": [
+            [
+                "70aa4eb2.52498"
+            ],
+            [
+                "5a70dc5a.1a7c14"
+            ]
+        ]
+    },
+    {
+        "id": "70aa4eb2.52498",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Vehicle Complete",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 10 * hours;\nvar max = 18 * hours;\n\n\n// this value is set in the install battery step\nif(msg.controller == \"BCC-v12.09.03\"){\n    min = 5 * days;\n    max = 10 * days;\n}\n\n// ...but hey, if we didn't do a Full Scan, let's make this test fast!\nif( msg.payload.action == \"QC Test - Initial\"){\n    min = 10 * hours;\n    max = 18 * hours;\n}\n\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Vehicle Complete\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 630,
+        "y": 700,
+        "wires": [
+            [
+                "2a13ee39.13b332",
+                "a526003f.7a919",
+                "9264da7.a620928"
+            ]
+        ]
+    },
+    {
+        "id": "5a70dc5a.1a7c14",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "QC Full Scan",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 10 * hours;\nvar max = 18 * hours;\n\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\nmsg.payload.timestamp  = new_time;\nmsg.payload.action     = \"QC Test - Full Scan\";\n\n// If this is our special case, then the test should take significantly longer\nif(msg.controller == \"BCC-v12.09.03\" ){\n    min = 20 * hours;\n    max = 28 * hours;\n    delay_ms = Math.floor(Math.random() * (max-min) + min);\n    new_time = new Date(msg.payload.timestamp.getTime() + delay_ms);\n    msg.payload.timestamp  = new_time;\n}\n\n// this value is set in the install battery step\nif(Math.floor(Math.random() * (100-1) + 1) >= 95){\n    msg.payload.testResult = \"FAILURE\";\n}else{\n        msg.payload.testResult = \"PASSED\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 700,
+        "wires": [
+            [
+                "a526003f.7a919",
+                "3d195f11.03e51"
+            ]
+        ]
+    },
+    {
+        "id": "2a13ee39.13b332",
+        "type": "debug",
+        "z": "d225b504.fc3778",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 970,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "335c934d.6a334c",
+        "type": "subflow:d225b504.fc3778",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "x": 870,
+        "y": 1000,
+        "wires": [
+            [
+                "efee7db5.95b2b"
+            ]
+        ]
+    },
+    {
+        "id": "a526003f.7a919",
+        "type": "file",
+        "z": "d225b504.fc3778",
+        "name": "conf19-3.manufacturing.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-3.manufacturing.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1020,
+        "y": 420,
+        "wires": [
+            [
+                "71a90de5.f94fb4"
+            ]
+        ]
+    },
+    {
+        "id": "71a90de5.f94fb4",
+        "type": "file",
+        "z": "d225b504.fc3778",
+        "name": "conf19-0.total.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-0.total.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1270,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9264da7.a620928",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Clear mfg details",
+        "func": "delete msg.payload.chargeControllerModel;\ndelete msg.payload.testResult;\ndelete msg.payload.battery_type;\ndelete msg.payload.battery_mfg;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 950,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37cb9e0a.38aee2",
+        "type": "function",
+        "z": "4735b1fb.3bbc4",
+        "name": "Vehicle Shipped",
+        "func": "msg.payload.sourceSystem = \"DELIVERY\";\n\nvar minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * days;\nvar max = 5 * days;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Vehicle Shipped\";\nmsg.payload.orderNo = msg.orderNo;\nmsg.payload.userid = msg.userid;\n//msg.payload.shippingId = \"TRX-\" + Math.floor(Math.random() * (99999-10000) + 10000);\nmsg.payload.shippingId   = \"TRX\" + new_time.getTime();\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 100,
+        "wires": [
+            [
+                "8e1f0392.0f45",
+                "b5526820.5205a8"
+            ]
+        ]
+    },
+    {
+        "id": "8e1f0392.0f45",
+        "type": "function",
+        "z": "4735b1fb.3bbc4",
+        "name": "Vehicle Arrived",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * days;\nvar max = 5 * days;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Vehicle Arrived\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 340,
+        "y": 160,
+        "wires": [
+            [
+                "93072a2b.52df88",
+                "b5526820.5205a8"
+            ]
+        ]
+    },
+    {
+        "id": "93072a2b.52df88",
+        "type": "function",
+        "z": "4735b1fb.3bbc4",
+        "name": "Appt Scheduled",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * hours;\nvar max = 5 * hours;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Appt Scheduled\";\n\nmsg.reschedule = Math.floor(Math.random() * (10-1) + 1);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "b5526820.5205a8",
+                "15e8644.7356e9c"
+            ]
+        ]
+    },
+    {
+        "id": "b28b9fca.81b1e",
+        "type": "function",
+        "z": "4735b1fb.3bbc4",
+        "name": "Delivery Complete",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 2 * days;\nvar max = 4 * days;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n//no future dates in Splunk!\nif(new_time.getTime() > Date.now()){\n    new_time = new Date();\n}\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"Delivery Complete\";\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 400,
+        "wires": [
+            [
+                "b5526820.5205a8",
+                "cd8a8197.782fd"
+            ]
+        ]
+    },
+    {
+        "id": "b5526820.5205a8",
+        "type": "file",
+        "z": "4735b1fb.3bbc4",
+        "name": "conf19-4.delivery.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-4.delivery.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 780,
+        "y": 200,
+        "wires": [
+            [
+                "a0af7334.4aa13"
+            ]
+        ]
+    },
+    {
+        "id": "a0af7334.4aa13",
+        "type": "file",
+        "z": "4735b1fb.3bbc4",
+        "name": "conf19-0.total.json",
+        "filename": "/Users/tomm/Documents/code/node-red/conf19-0.total.json",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 970,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "efee7db5.95b2b",
+        "type": "subflow:4735b1fb.3bbc4",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "x": 1120,
+        "y": 1000,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cd8a8197.782fd",
+        "type": "debug",
+        "z": "4735b1fb.3bbc4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1030,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "4cc6263a.e622a8",
+        "type": "function",
+        "z": "156e879b.66d3c8",
+        "name": "Payment Failed",
+        "func": "//reset the timestamp for a random amount of time after the previous step\nvar min =  10000;\nvar max =  60000;\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action    = \"Payment Failed\";\n\ndelete msg.payload.reason;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 530,
+        "y": 520,
+        "wires": [
+            [
+                "702e3417.d705cc"
+            ]
+        ]
+    },
+    {
+        "id": "15e8644.7356e9c",
+        "type": "switch",
+        "z": "4735b1fb.3bbc4",
+        "name": "reschedule appt?",
+        "property": "reschedule",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "7",
+                "vt": "num"
+            },
+            {
+                "t": "gt",
+                "v": "7",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 340,
+        "wires": [
+            [
+                "b28b9fca.81b1e"
+            ],
+            [
+                "93072a2b.52df88"
+            ]
+        ]
+    },
+    {
+        "id": "3d195f11.03e51",
+        "type": "switch",
+        "z": "d225b504.fc3778",
+        "name": "final check",
+        "property": "payload.testResult",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "PASSED",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "FAILURE",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 460,
+        "y": 780,
+        "wires": [
+            [
+                "70aa4eb2.52498"
+            ],
+            [
+                "76ba0095.5a8d2"
+            ]
+        ]
+    },
+    {
+        "id": "76ba0095.5a8d2",
+        "type": "function",
+        "z": "d225b504.fc3778",
+        "name": "Defective - HOLD",
+        "func": "var minutes = 60 * 1000;\nvar hours = 60 * minutes;\nvar days = 24 * hours;\n\nvar min = 10 * hours;\nvar max = 18 * hours;\n\n\n// this value is set in the install battery step\nif(msg.controller == \"BCC-v12.09.03\"){\n    min = 5 * days;\n    max = 10 * days;\n}\n\n\nvar delay_ms = Math.floor(Math.random() * (max-min) + min);\nvar new_time = new Date(msg.payload.timestamp.getTime() + delay_ms); \n\n\nmsg.payload.timestamp = new_time;\nmsg.payload.action   = \"HELD - Further Inverstigation \";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 670,
+        "y": 800,
+        "wires": [
+            [
+                "2a13ee39.13b332",
+                "a526003f.7a919"
+            ]
+        ]
+    },
+    {
+        "id": "48a37493.3d474c",
+        "type": "debug",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "gcount",
+        "targetType": "msg",
+        "x": 290,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8ed28b22.8a8468",
+        "type": "switch",
+        "z": "ab051ff7.d5517",
+        "name": "",
+        "property": "gcount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lte",
+                "v": "2000",
+                "vt": "str"
+            },
+            {
+                "t": "gt",
+                "v": "2000",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 140,
+        "wires": [
+            [
+                "35e12216.dc3b4e"
+            ],
+            []
+        ]
+    }
+]

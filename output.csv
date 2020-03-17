@@ -1,16 +1,16 @@
 counter,step,timestamp,name,country,guid
-1,step1,"""2019-12-29T10:18:23.000Z""",Stephen Finn,Lebanon,2f54d23f-188f-4ee5-a628-aa75d6d79675
-1,step2,"""2019-12-29T10:18:58.000Z""",Stephen Finn,Lebanon,2f54d23f-188f-4ee5-a628-aa75d6d79675
-1,step3,"""2019-12-29T10:19:03.000Z""",Stephen Finn,Lebanon,2f54d23f-188f-4ee5-a628-aa75d6d79675
-2,step1,"""2019-10-29T04:13:41.000Z""",Travis Caffey,Christmas Island,cdbd31ea-91e0-4cb5-a042-cddd5410cd3b
-2,step2,"""2019-10-29T04:14:06.000Z""",Travis Caffey,Christmas Island,cdbd31ea-91e0-4cb5-a042-cddd5410cd3b
-2,step3,"""2019-10-29T04:14:46.000Z""",Travis Caffey,Christmas Island,cdbd31ea-91e0-4cb5-a042-cddd5410cd3b
-3,step1,"""2019-05-29T01:43:28.000Z""",Madelyn Remus,Sudan,7aa6730a-b8cb-41ff-89c9-588f8c612f2f
-3,step2,"""2019-05-29T01:43:38.000Z""",Madelyn Remus,Sudan,7aa6730a-b8cb-41ff-89c9-588f8c612f2f
-3,step3,"""2019-05-29T01:44:03.000Z""",Madelyn Remus,Sudan,7aa6730a-b8cb-41ff-89c9-588f8c612f2f
-4,step1,"""2019-08-10T01:29:44.000Z""",Shea Murphy,Aruba,f25b6f3e-0359-4fab-b635-931b193dd081
-4,step2,"""2019-08-10T01:30:29.000Z""",Shea Murphy,Aruba,f25b6f3e-0359-4fab-b635-931b193dd081
-4,step3,"""2019-08-10T01:31:14.000Z""",Shea Murphy,Aruba,f25b6f3e-0359-4fab-b635-931b193dd081
-5,step1,"""2019-01-06T06:08:37.000Z""",Leanne Rikard,Norfolk Island,635cc4b8-9476-4760-a7a4-8a467a87b5e7
-5,step2,"""2019-01-06T06:09:17.000Z""",Leanne Rikard,Norfolk Island,635cc4b8-9476-4760-a7a4-8a467a87b5e7
-5,step3,"""2019-01-06T06:09:27.000Z""",Leanne Rikard,Norfolk Island,635cc4b8-9476-4760-a7a4-8a467a87b5e7
+1,step1,"""2019-10-13T09:57:15.000Z""",Richelle Mullens,Morocco,65fb9444-8e81-4855-a6a3-be1fe2879dbe
+1,step2,"""2019-10-13T09:57:55.000Z""",Richelle Mullens,Morocco,65fb9444-8e81-4855-a6a3-be1fe2879dbe
+1,step3,"""2019-10-13T09:58:05.000Z""",Richelle Mullens,Morocco,65fb9444-8e81-4855-a6a3-be1fe2879dbe
+2,step1,"""2020-01-17T02:30:27.000Z""",Mitch Rebelo,Mauritius,37ac8612-5210-4c28-9f38-f75b010f1ecd
+2,step2,"""2020-01-17T02:30:42.000Z""",Mitch Rebelo,Mauritius,37ac8612-5210-4c28-9f38-f75b010f1ecd
+2,step3,"""2020-01-17T02:31:12.000Z""",Mitch Rebelo,Mauritius,37ac8612-5210-4c28-9f38-f75b010f1ecd
+3,step1,"""2019-04-23T01:17:52.000Z""",Myong Carter,Oman,f5859600-b242-4617-b464-af0c5a548e3e
+3,step2,"""2019-04-23T01:17:57.000Z""",Myong Carter,Oman,f5859600-b242-4617-b464-af0c5a548e3e
+3,step3,"""2019-04-23T01:18:42.000Z""",Myong Carter,Oman,f5859600-b242-4617-b464-af0c5a548e3e
+4,step1,"""2019-11-14T01:55:35.000Z""",Kirstie Coolidge,Afghanistan,26ca646b-3c10-4428-9727-677d15dba1aa
+4,step2,"""2019-11-14T01:56:05.000Z""",Kirstie Coolidge,Afghanistan,26ca646b-3c10-4428-9727-677d15dba1aa
+4,step3,"""2019-11-14T01:56:45.000Z""",Kirstie Coolidge,Afghanistan,26ca646b-3c10-4428-9727-677d15dba1aa
+5,step1,"""2019-03-26T02:08:16.000Z""",Lyn Castleman,Greenland,cb5298fe-c095-47df-840b-da7f616116bb
+5,step2,"""2019-03-26T02:08:26.000Z""",Lyn Castleman,Greenland,cb5298fe-c095-47df-840b-da7f616116bb
+5,step3,"""2019-03-26T02:09:11.000Z""",Lyn Castleman,Greenland,cb5298fe-c095-47df-840b-da7f616116bb

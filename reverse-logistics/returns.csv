@@ -1,0 +1,726 @@
+counter,step,timestamp,customerID,orderID,productID,return_reason,return_status,email
+1,RMA Requested,"""2020-01-09T09:38:27.000Z""",C-54054,O-5050-24,13,Wrong Size,,rene.winter@sealine.biz
+1,RMA Issued,"""2020-01-09T09:50:27.000Z""",C-54054,O-5050-24,13,Wrong Size,,rene.winter@sealine.biz
+1,ASN Received,"""2020-01-09T13:50:27.000Z""",C-54054,O-5050-24,13,Wrong Size,,rene.winter@sealine.biz
+1,Item Received,"""2020-01-14T13:50:27.000Z""",C-54054,O-5050-24,13,Wrong Size,,rene.winter@sealine.biz
+1,Item Inspected,"""2020-01-20T13:50:27.000Z""",C-54054,O-5050-24,13,Wrong Size,Return Accepted,rene.winter@sealine.biz
+1,Customer Sat,"""2020-01-20T13:57:27.000Z""",C-54054,O-5050-24,13,Wrong Size,Return Accepted,rene.winter@sealine.biz
+1,Return to Stock,"""2020-01-20T13:58:27.000Z""",C-54054,O-5050-24,13,Wrong Size,Return Accepted,rene.winter@sealine.biz
+2,RMA Requested,"""2019-05-09T05:18:06.000Z""",C-84682,O-7337-48,19,Wrong Size,,chloe.porras@hassifix.eu
+2,RMA Issued,"""2019-05-09T05:26:06.000Z""",C-84682,O-7337-48,19,Wrong Size,,chloe.porras@hassifix.eu
+2,ASN Received,"""2019-05-11T02:26:06.000Z""",C-84682,O-7337-48,19,Wrong Size,,chloe.porras@hassifix.eu
+2,Item Received,"""2019-05-15T02:26:06.000Z""",C-84682,O-7337-48,19,Wrong Size,,chloe.porras@hassifix.eu
+2,Item Inspected,"""2019-05-21T02:26:06.000Z""",C-84682,O-7337-48,19,Wrong Size,Return Accepted,chloe.porras@hassifix.eu
+2,Customer Sat,"""2019-05-21T02:30:06.000Z""",C-84682,O-7337-48,19,Wrong Size,Return Accepted,chloe.porras@hassifix.eu
+2,Return to Stock,"""2019-05-21T02:37:06.000Z""",C-84682,O-7337-48,19,Wrong Size,Return Accepted,chloe.porras@hassifix.eu
+3,RMA Requested,"""2019-03-02T07:57:11.000Z""",C-10459,O-4933-75,16,Wrong Size,,andy.brier@nitrocam.name
+3,RMA Issued,"""2019-03-02T08:02:11.000Z""",C-10459,O-4933-75,16,Wrong Size,,andy.brier@nitrocam.name
+3,ASN Received,"""2019-03-03T19:02:11.000Z""",C-10459,O-4933-75,16,Wrong Size,,andy.brier@nitrocam.name
+3,Item Received,"""2019-03-09T19:02:11.000Z""",C-10459,O-4933-75,16,Wrong Size,,andy.brier@nitrocam.name
+3,Item Inspected,"""2019-03-15T19:02:11.000Z""",C-10459,O-4933-75,16,Wrong Size,Return Accepted,andy.brier@nitrocam.name
+3,Customer Sat,"""2019-03-15T19:11:11.000Z""",C-10459,O-4933-75,16,Wrong Size,Return Accepted,andy.brier@nitrocam.name
+3,Return to Stock,"""2019-03-15T19:13:11.000Z""",C-10459,O-4933-75,16,Wrong Size,Return Accepted,andy.brier@nitrocam.name
+4,RMA Requested,"""2019-04-08T07:48:26.000Z""",C-42735,O-3643-38,7,Item is defective,,vaughn.pendergast@fastmart.gov
+4,RMA Issued,"""2019-04-08T07:57:26.000Z""",C-42735,O-3643-38,7,Item is defective,,vaughn.pendergast@fastmart.gov
+4,ASN Received,"""2019-04-10T05:57:26.000Z""",C-42735,O-3643-38,7,Item is defective,,vaughn.pendergast@fastmart.gov
+4,Item Received,"""2019-04-14T05:57:26.000Z""",C-42735,O-3643-38,7,Item is defective,,vaughn.pendergast@fastmart.gov
+4,Item Inspected,"""2019-04-18T05:57:26.000Z""",C-42735,O-3643-38,7,Item is defective,Return Accepted,vaughn.pendergast@fastmart.gov
+4,Defective Item,"""2019-04-18T05:59:26.000Z""",C-42735,O-3643-38,7,Item is defective,Return Accepted,vaughn.pendergast@fastmart.gov
+4,Repair Item,"""2019-04-18T21:59:26.000Z""",C-42735,O-3643-38,7,Item is defective,Return Accepted,vaughn.pendergast@fastmart.gov
+4,Fixed,"""2019-04-19T07:59:26.000Z""",C-42735,O-3643-38,7,Item is defective,Return Accepted,vaughn.pendergast@fastmart.gov
+4,Return to Customer,"""2019-04-20T00:59:26.000Z""",C-42735,O-3643-38,7,Item is defective,Return Accepted,vaughn.pendergast@fastmart.gov
+5,RMA Requested,"""2019-09-07T08:10:34.000Z""",C-46039,O-3738-25,18,Wrong Size,,warren.finn@truext.com
+5,RMA Issued,"""2019-09-07T08:20:34.000Z""",C-46039,O-3738-25,18,Wrong Size,,warren.finn@truext.com
+5,ASN Received,"""2019-09-08T21:20:34.000Z""",C-46039,O-3738-25,18,Wrong Size,,warren.finn@truext.com
+5,Item Received,"""2019-09-12T21:20:34.000Z""",C-46039,O-3738-25,18,Wrong Size,,warren.finn@truext.com
+5,Item Inspected,"""2019-09-18T21:20:34.000Z""",C-46039,O-3738-25,18,Wrong Size,Return Accepted,warren.finn@truext.com
+5,Customer Sat,"""2019-09-18T21:26:34.000Z""",C-46039,O-3738-25,18,Wrong Size,Return Accepted,warren.finn@truext.com
+5,Return to Stock,"""2019-09-18T21:35:34.000Z""",C-46039,O-3738-25,18,Wrong Size,Return Accepted,warren.finn@truext.com
+6,RMA Requested,"""2019-06-14T06:48:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,,janett.pickering@omnitouch.me
+6,RMA Issued,"""2019-06-14T07:07:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,,janett.pickering@omnitouch.me
+6,ASN Received,"""2019-06-15T12:07:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,,janett.pickering@omnitouch.me
+6,Item Received,"""2019-06-21T12:07:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,,janett.pickering@omnitouch.me
+6,Item Inspected,"""2019-06-26T12:07:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,Return Accepted,janett.pickering@omnitouch.me
+6,Customer Sat,"""2019-06-26T12:10:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,Return Accepted,janett.pickering@omnitouch.me
+6,Return to Stock,"""2019-06-26T12:15:09.000Z""",C-26687,O-9349-40,17,Wrong Item Shipped,Return Accepted,janett.pickering@omnitouch.me
+7,RMA Requested,"""2020-02-16T03:12:17.000Z""",C-45265,O-1190-78,9,Wrong Item Shipped,,richelle.zobel@britech.xyz
+7,RMA Refused,"""2020-02-16T03:29:17.000Z""",C-45265,O-1190-78,9,Wrong Item Shipped,,richelle.zobel@britech.xyz
+8,RMA Requested,"""2019-04-04T06:59:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,,erik.seabury@freecast.edu
+8,RMA Issued,"""2019-04-04T07:16:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,,erik.seabury@freecast.edu
+8,ASN Received,"""2019-04-05T14:16:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,,erik.seabury@freecast.edu
+8,Item Received,"""2019-04-10T14:16:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,,erik.seabury@freecast.edu
+8,Item Inspected,"""2019-04-14T14:16:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,Return Accepted,erik.seabury@freecast.edu
+8,Customer Sat,"""2019-04-14T14:24:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,Return Accepted,erik.seabury@freecast.edu
+8,Return to Stock,"""2019-04-14T14:29:21.000Z""",C-72368,O-2292-89,12,Ordered Wrong Item,Return Accepted,erik.seabury@freecast.edu
+9,RMA Requested,"""2019-04-17T11:09:10.000Z""",C-76246,O-9840-93,18,Item is defective,,jenna.furlough@storex.me
+9,RMA Issued,"""2019-04-17T11:16:10.000Z""",C-76246,O-9840-93,18,Item is defective,,jenna.furlough@storex.me
+9,ASN Received,"""2019-04-18T05:16:10.000Z""",C-76246,O-9840-93,18,Item is defective,,jenna.furlough@storex.me
+9,Item Received,"""2019-04-23T05:16:10.000Z""",C-76246,O-9840-93,18,Item is defective,,jenna.furlough@storex.me
+9,Item Inspected,"""2019-04-28T05:16:10.000Z""",C-76246,O-9840-93,18,Item is defective,Return Accepted,jenna.furlough@storex.me
+9,Defective Item,"""2019-04-28T05:25:10.000Z""",C-76246,O-9840-93,18,Item is defective,Return Accepted,jenna.furlough@storex.me
+9,Repair Item,"""2019-04-28T17:25:10.000Z""",C-76246,O-9840-93,18,Item is defective,Return Accepted,jenna.furlough@storex.me
+9,Fixed,"""2019-04-30T05:25:10.000Z""",C-76246,O-9840-93,18,Item is defective,Return Accepted,jenna.furlough@storex.me
+9,Return to Customer,"""2019-04-30T17:25:10.000Z""",C-76246,O-9840-93,18,Item is defective,Return Accepted,jenna.furlough@storex.me
+10,RMA Requested,"""2019-09-17T11:17:37.000Z""",C-35808,O-7322-63,4,Wrong Size,,theo.turner@hassifix.edu
+10,RMA Issued,"""2019-09-17T11:31:37.000Z""",C-35808,O-7322-63,4,Wrong Size,,theo.turner@hassifix.edu
+10,ASN Received,"""2019-09-18T19:31:37.000Z""",C-35808,O-7322-63,4,Wrong Size,,theo.turner@hassifix.edu
+10,Item Received,"""2019-09-22T19:31:37.000Z""",C-35808,O-7322-63,4,Wrong Size,,theo.turner@hassifix.edu
+10,Item Inspected,"""2019-09-26T19:31:37.000Z""",C-35808,O-7322-63,4,Wrong Size,Return Accepted,theo.turner@hassifix.edu
+10,Customer Sat,"""2019-09-26T19:34:37.000Z""",C-35808,O-7322-63,4,Wrong Size,Return Accepted,theo.turner@hassifix.edu
+10,Return to Stock,"""2019-09-26T19:38:37.000Z""",C-35808,O-7322-63,4,Wrong Size,Return Accepted,theo.turner@hassifix.edu
+11,RMA Requested,"""2019-06-16T05:45:28.000Z""",C-84983,O-2836-37,4,Wrong Size,,lorelei.flinn@superwire.edu
+11,RMA Issued,"""2019-06-16T06:01:28.000Z""",C-84983,O-2836-37,4,Wrong Size,,lorelei.flinn@superwire.edu
+11,ASN Received,"""2019-06-18T00:01:28.000Z""",C-84983,O-2836-37,4,Wrong Size,,lorelei.flinn@superwire.edu
+11,Item Received,"""2019-06-21T00:01:28.000Z""",C-84983,O-2836-37,4,Wrong Size,,lorelei.flinn@superwire.edu
+11,Item Inspected,"""2019-06-25T00:01:28.000Z""",C-84983,O-2836-37,4,Wrong Size,Return Accepted,lorelei.flinn@superwire.edu
+11,Customer Sat,"""2019-06-25T00:06:28.000Z""",C-84983,O-2836-37,4,Wrong Size,Return Accepted,lorelei.flinn@superwire.edu
+11,Return to Stock,"""2019-06-25T00:08:28.000Z""",C-84983,O-2836-37,4,Wrong Size,Return Accepted,lorelei.flinn@superwire.edu
+12,RMA Requested,"""2019-03-22T10:52:51.000Z""",C-17835,O-4619-67,2,Item is defective,,cedric.winter@storex.com
+12,RMA Issued,"""2019-03-22T11:11:51.000Z""",C-17835,O-4619-67,2,Item is defective,,cedric.winter@storex.com
+12,ASN Received,"""2019-03-24T03:11:51.000Z""",C-17835,O-4619-67,2,Item is defective,,cedric.winter@storex.com
+12,Item Received,"""2019-03-30T03:11:51.000Z""",C-17835,O-4619-67,2,Item is defective,,cedric.winter@storex.com
+12,Item Inspected,"""2019-04-04T03:11:51.000Z""",C-17835,O-4619-67,2,Item is defective,Return Accepted,cedric.winter@storex.com
+12,Defective Item,"""2019-04-04T03:18:51.000Z""",C-17835,O-4619-67,2,Item is defective,Return Accepted,cedric.winter@storex.com
+12,Repair Item,"""2019-04-05T06:18:51.000Z""",C-17835,O-4619-67,2,Item is defective,Return Accepted,cedric.winter@storex.com
+12,Fixed,"""2019-04-05T22:18:51.000Z""",C-17835,O-4619-67,2,Item is defective,Return Accepted,cedric.winter@storex.com
+12,Return to Stock,"""2019-04-05T22:25:51.000Z""",C-17835,O-4619-67,2,Item is defective,Return Accepted,cedric.winter@storex.com
+13,RMA Requested,"""2020-01-20T06:51:25.000Z""",C-60572,O-8566-25,11,Ordered Wrong Item,,cecilia.bourquin@seelogic.mobi
+13,RMA Refused,"""2020-01-20T07:04:25.000Z""",C-60572,O-8566-25,11,Ordered Wrong Item,,cecilia.bourquin@seelogic.mobi
+14,RMA Requested,"""2019-06-28T02:54:56.000Z""",C-56573,O-7575-58,14,Wrong Size,,darrell.paquette@seelogic.gov
+14,RMA Issued,"""2019-06-28T02:59:56.000Z""",C-56573,O-7575-58,14,Wrong Size,,darrell.paquette@seelogic.gov
+14,ASN Received,"""2019-06-28T20:59:56.000Z""",C-56573,O-7575-58,14,Wrong Size,,darrell.paquette@seelogic.gov
+14,Item Received,"""2019-07-02T20:59:56.000Z""",C-56573,O-7575-58,14,Wrong Size,,darrell.paquette@seelogic.gov
+14,Item Inspected,"""2019-07-07T20:59:56.000Z""",C-56573,O-7575-58,14,Wrong Size,Return Accepted,darrell.paquette@seelogic.gov
+14,Customer Sat,"""2019-07-07T21:08:56.000Z""",C-56573,O-7575-58,14,Wrong Size,Return Accepted,darrell.paquette@seelogic.gov
+14,Return to Stock,"""2019-07-07T21:16:56.000Z""",C-56573,O-7575-58,14,Wrong Size,Return Accepted,darrell.paquette@seelogic.gov
+15,RMA Requested,"""2020-02-20T06:46:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,,warren.cumbie@foretrust.co
+15,RMA Issued,"""2020-02-20T07:05:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,,warren.cumbie@foretrust.co
+15,ASN Received,"""2020-02-21T13:05:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,,warren.cumbie@foretrust.co
+15,Item Received,"""2020-02-27T13:05:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,,warren.cumbie@foretrust.co
+15,Item Inspected,"""2020-03-04T13:05:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,Return Accepted,warren.cumbie@foretrust.co
+15,Customer Sat,"""2020-03-04T13:13:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,Return Accepted,warren.cumbie@foretrust.co
+15,Return to Stock,"""2020-03-04T13:17:48.000Z""",C-82824,O-5805-52,2,Ordered Wrong Item,Return Accepted,warren.cumbie@foretrust.co
+16,RMA Requested,"""2019-11-20T12:24:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,,vaughn.dunham@polygan.club
+16,RMA Issued,"""2019-11-20T12:29:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,,vaughn.dunham@polygan.club
+16,ASN Received,"""2019-11-21T02:29:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,,vaughn.dunham@polygan.club
+16,Item Received,"""2019-11-27T02:29:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,,vaughn.dunham@polygan.club
+16,Item Inspected,"""2019-12-02T02:29:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,Return Accepted,vaughn.dunham@polygan.club
+16,Recall Item,"""2019-12-02T02:32:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,Return Accepted,vaughn.dunham@polygan.club
+16,Repair Item,"""2019-12-03T14:32:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,Return Accepted,vaughn.dunham@polygan.club
+16,Fixed,"""2019-12-04T12:32:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,Return Accepted,vaughn.dunham@polygan.club
+16,Return to Stock,"""2019-12-04T12:40:57.000Z""",C-39239,O-1869-76,10,Item has been recalled,Return Accepted,vaughn.dunham@polygan.club
+17,RMA Requested,"""2019-12-14T03:30:39.000Z""",C-14143,O-3100-18,5,Item is defective,,katelin.oldman@coremax.co
+17,RMA Issued,"""2019-12-14T03:49:39.000Z""",C-14143,O-3100-18,5,Item is defective,,katelin.oldman@coremax.co
+17,ASN Received,"""2019-12-14T10:49:39.000Z""",C-14143,O-3100-18,5,Item is defective,,katelin.oldman@coremax.co
+17,Item Received,"""2019-12-17T10:49:39.000Z""",C-14143,O-3100-18,5,Item is defective,,katelin.oldman@coremax.co
+17,Item Inspected,"""2019-12-22T10:49:39.000Z""",C-14143,O-3100-18,5,Item is defective,Return Accepted,katelin.oldman@coremax.co
+17,Defective Item,"""2019-12-22T10:51:39.000Z""",C-14143,O-3100-18,5,Item is defective,Return Accepted,katelin.oldman@coremax.co
+17,Repair Item,"""2019-12-23T18:51:39.000Z""",C-14143,O-3100-18,5,Item is defective,Return Accepted,katelin.oldman@coremax.co
+17,Fixed,"""2019-12-25T09:51:39.000Z""",C-14143,O-3100-18,5,Item is defective,Return Accepted,katelin.oldman@coremax.co
+17,Return to Stock,"""2019-12-25T09:53:39.000Z""",C-14143,O-3100-18,5,Item is defective,Return Accepted,katelin.oldman@coremax.co
+18,RMA Requested,"""2019-02-13T07:29:14.000Z""",C-78243,O-5802-86,5,Wrong Size,,michael.goudy@seelogic.mobi
+18,RMA Issued,"""2019-02-13T07:45:14.000Z""",C-78243,O-5802-86,5,Wrong Size,,michael.goudy@seelogic.mobi
+18,ASN Received,"""2019-02-14T02:45:14.000Z""",C-78243,O-5802-86,5,Wrong Size,,michael.goudy@seelogic.mobi
+18,Item Received,"""2019-02-17T02:45:14.000Z""",C-78243,O-5802-86,5,Wrong Size,,michael.goudy@seelogic.mobi
+18,Item Inspected,"""2019-02-20T02:45:14.000Z""",C-78243,O-5802-86,5,Wrong Size,Return Accepted,michael.goudy@seelogic.mobi
+18,Customer Sat,"""2019-02-20T02:47:14.000Z""",C-78243,O-5802-86,5,Wrong Size,Return Accepted,michael.goudy@seelogic.mobi
+18,Return to Stock,"""2019-02-20T02:49:14.000Z""",C-78243,O-5802-86,5,Wrong Size,Return Accepted,michael.goudy@seelogic.mobi
+19,RMA Requested,"""2019-07-14T03:56:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,,michelle.verde@bellgate.net
+19,RMA Issued,"""2019-07-14T04:14:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,,michelle.verde@bellgate.net
+19,ASN Received,"""2019-07-15T16:14:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,,michelle.verde@bellgate.net
+19,Item Received,"""2019-07-19T16:14:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,,michelle.verde@bellgate.net
+19,Item Inspected,"""2019-07-24T16:14:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,Return Accepted,michelle.verde@bellgate.net
+19,Customer Sat,"""2019-07-24T16:22:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,Return Accepted,michelle.verde@bellgate.net
+19,Return to Stock,"""2019-07-24T16:25:49.000Z""",C-89827,O-3659-86,4,Ordered Wrong Item,Return Accepted,michelle.verde@bellgate.net
+20,RMA Requested,"""2019-10-24T03:33:22.000Z""",C-54045,O-2901-45,4,Item is defective,,grace.miers@sixtysix.info
+20,RMA Issued,"""2019-10-24T03:49:22.000Z""",C-54045,O-2901-45,4,Item is defective,,grace.miers@sixtysix.info
+20,ASN Received,"""2019-10-25T14:49:22.000Z""",C-54045,O-2901-45,4,Item is defective,,grace.miers@sixtysix.info
+20,Item Received,"""2019-10-31T14:49:22.000Z""",C-54045,O-2901-45,4,Item is defective,,grace.miers@sixtysix.info
+20,Item Inspected,"""2019-11-05T14:49:22.000Z""",C-54045,O-2901-45,4,Item is defective,Return Accepted,grace.miers@sixtysix.info
+20,Defective Item,"""2019-11-05T14:58:22.000Z""",C-54045,O-2901-45,4,Item is defective,Return Accepted,grace.miers@sixtysix.info
+20,Repair Item,"""2019-11-07T04:58:22.000Z""",C-54045,O-2901-45,4,Item is defective,Return Accepted,grace.miers@sixtysix.info
+20,Fixed,"""2019-11-08T09:58:22.000Z""",C-54045,O-2901-45,4,Item is defective,Return Accepted,grace.miers@sixtysix.info
+20,Return to Customer,"""2019-11-09T06:58:22.000Z""",C-54045,O-2901-45,4,Item is defective,Return Accepted,grace.miers@sixtysix.info
+21,RMA Requested,"""2020-02-06T06:44:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,,shea.pullman@peersys.me
+21,RMA Issued,"""2020-02-06T06:51:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,,shea.pullman@peersys.me
+21,ASN Received,"""2020-02-06T21:51:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,,shea.pullman@peersys.me
+21,Item Received,"""2020-02-12T21:51:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,,shea.pullman@peersys.me
+21,Item Inspected,"""2020-02-15T21:51:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,Return Accepted,shea.pullman@peersys.me
+21,Recall Item,"""2020-02-15T21:56:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,Return Accepted,shea.pullman@peersys.me
+21,Repair Item,"""2020-02-17T14:56:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,Return Accepted,shea.pullman@peersys.me
+21,Destroyed,"""2020-02-18T04:56:15.000Z""",C-25442,O-9823-69,3,Item has been recalled,Return Accepted,shea.pullman@peersys.me
+22,RMA Requested,"""2019-10-21T03:06:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,,kathy.finn@grafixmedia.eu
+22,RMA Issued,"""2019-10-21T03:16:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,,kathy.finn@grafixmedia.eu
+22,ASN Received,"""2019-10-22T05:16:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,,kathy.finn@grafixmedia.eu
+22,Item Received,"""2019-10-27T05:16:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,,kathy.finn@grafixmedia.eu
+22,Item Inspected,"""2019-10-30T05:16:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,Return Accepted,kathy.finn@grafixmedia.eu
+22,Customer Sat,"""2019-10-30T05:20:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,Return Accepted,kathy.finn@grafixmedia.eu
+22,Return to Stock,"""2019-10-30T05:26:24.000Z""",C-76267,O-1174-61,20,Ordered Wrong Item,Return Accepted,kathy.finn@grafixmedia.eu
+23,RMA Requested,"""2019-07-09T03:53:31.000Z""",C-60965,O-5538-11,5,Wrong Item Shipped,,lorelei.bradbury@cameratek.name
+23,RMA Refused,"""2019-07-09T04:07:31.000Z""",C-60965,O-5538-11,5,Wrong Item Shipped,,lorelei.bradbury@cameratek.name
+24,RMA Requested,"""2020-02-21T12:37:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,,erik.paschall@cameratek.org
+24,RMA Issued,"""2020-02-21T12:44:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,,erik.paschall@cameratek.org
+24,ASN Received,"""2020-02-23T08:44:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,,erik.paschall@cameratek.org
+24,Item Received,"""2020-02-29T08:44:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,,erik.paschall@cameratek.org
+24,Item Inspected,"""2020-03-03T08:44:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,Return Accepted,erik.paschall@cameratek.org
+24,Customer Sat,"""2020-03-03T08:53:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,Return Accepted,erik.paschall@cameratek.org
+24,Return to Stock,"""2020-03-03T08:58:07.000Z""",C-23012,O-8093-65,18,Ordered Wrong Item,Return Accepted,erik.paschall@cameratek.org
+25,RMA Requested,"""2019-09-03T12:29:10.000Z""",C-59628,O-1768-78,17,Item is defective,,heath.schaefer@lexiconlabs.biz
+25,RMA Issued,"""2019-09-03T12:39:10.000Z""",C-59628,O-1768-78,17,Item is defective,,heath.schaefer@lexiconlabs.biz
+25,ASN Received,"""2019-09-04T10:39:10.000Z""",C-59628,O-1768-78,17,Item is defective,,heath.schaefer@lexiconlabs.biz
+25,Item Received,"""2019-09-08T10:39:10.000Z""",C-59628,O-1768-78,17,Item is defective,,heath.schaefer@lexiconlabs.biz
+25,Item Inspected,"""2019-09-13T10:39:10.000Z""",C-59628,O-1768-78,17,Item is defective,Return Accepted,heath.schaefer@lexiconlabs.biz
+25,Defective Item,"""2019-09-13T10:46:10.000Z""",C-59628,O-1768-78,17,Item is defective,Return Accepted,heath.schaefer@lexiconlabs.biz
+25,Repair Item,"""2019-09-14T04:46:10.000Z""",C-59628,O-1768-78,17,Item is defective,Return Accepted,heath.schaefer@lexiconlabs.biz
+25,Fixed,"""2019-09-15T23:46:10.000Z""",C-59628,O-1768-78,17,Item is defective,Return Accepted,heath.schaefer@lexiconlabs.biz
+25,Return to Customer,"""2019-09-16T20:46:10.000Z""",C-59628,O-1768-78,17,Item is defective,Return Accepted,heath.schaefer@lexiconlabs.biz
+26,RMA Requested,"""2020-01-05T03:01:19.000Z""",C-31456,O-1829-64,14,Wrong Size,,mitch.carter@terrasys.mobi
+26,RMA Issued,"""2020-01-05T03:20:19.000Z""",C-31456,O-1829-64,14,Wrong Size,,mitch.carter@terrasys.mobi
+26,ASN Received,"""2020-01-06T12:20:19.000Z""",C-31456,O-1829-64,14,Wrong Size,,mitch.carter@terrasys.mobi
+26,Item Received,"""2020-01-09T12:20:19.000Z""",C-31456,O-1829-64,14,Wrong Size,,mitch.carter@terrasys.mobi
+26,Item Inspected,"""2020-01-13T12:20:19.000Z""",C-31456,O-1829-64,14,Wrong Size,Return Accepted,mitch.carter@terrasys.mobi
+26,Customer Sat,"""2020-01-13T12:26:19.000Z""",C-31456,O-1829-64,14,Wrong Size,Return Accepted,mitch.carter@terrasys.mobi
+26,Return to Stock,"""2020-01-13T12:29:19.000Z""",C-31456,O-1829-64,14,Wrong Size,Return Accepted,mitch.carter@terrasys.mobi
+27,RMA Requested,"""2019-06-30T01:12:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,,adam.wallis@polycore.org
+27,RMA Issued,"""2019-06-30T01:17:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,,adam.wallis@polycore.org
+27,ASN Received,"""2019-07-01T19:17:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,,adam.wallis@polycore.org
+27,Item Received,"""2019-07-04T19:17:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,,adam.wallis@polycore.org
+27,Item Inspected,"""2019-07-09T19:17:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,Return Accepted,adam.wallis@polycore.org
+27,Recall Item,"""2019-07-09T19:23:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,Return Accepted,adam.wallis@polycore.org
+27,Repair Item,"""2019-07-11T12:23:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,Return Accepted,adam.wallis@polycore.org
+27,Return to OEM,"""2019-07-12T23:23:13.000Z""",C-52007,O-3956-46,7,Item has been recalled,Return Accepted,adam.wallis@polycore.org
+28,RMA Requested,"""2019-02-01T07:36:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,,juliana.zobel@dynaair.mobi
+28,RMA Issued,"""2019-02-01T07:46:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,,juliana.zobel@dynaair.mobi
+28,ASN Received,"""2019-02-02T05:46:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,,juliana.zobel@dynaair.mobi
+28,Item Received,"""2019-02-05T05:46:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,,juliana.zobel@dynaair.mobi
+28,Item Inspected,"""2019-02-11T05:46:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,Return Accepted,juliana.zobel@dynaair.mobi
+28,Customer Sat,"""2019-02-11T05:54:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,Return Accepted,juliana.zobel@dynaair.mobi
+28,Return to Stock,"""2019-02-11T05:59:26.000Z""",C-36568,O-9025-46,7,Wrong Item Shipped,Return Accepted,juliana.zobel@dynaair.mobi
+29,RMA Requested,"""2019-10-30T03:58:17.000Z""",C-47875,O-2487-91,9,Item is defective,,susana.krumm@pancast.me
+29,RMA Issued,"""2019-10-30T04:11:17.000Z""",C-47875,O-2487-91,9,Item is defective,,susana.krumm@pancast.me
+29,ASN Received,"""2019-11-01T02:11:17.000Z""",C-47875,O-2487-91,9,Item is defective,,susana.krumm@pancast.me
+29,Item Received,"""2019-11-07T02:11:17.000Z""",C-47875,O-2487-91,9,Item is defective,,susana.krumm@pancast.me
+29,Item Inspected,"""2019-11-11T02:11:17.000Z""",C-47875,O-2487-91,9,Item is defective,Return Accepted,susana.krumm@pancast.me
+29,Defective Item,"""2019-11-11T02:19:17.000Z""",C-47875,O-2487-91,9,Item is defective,Return Accepted,susana.krumm@pancast.me
+29,Repair Item,"""2019-11-11T21:19:17.000Z""",C-47875,O-2487-91,9,Item is defective,Return Accepted,susana.krumm@pancast.me
+29,Fixed,"""2019-11-13T20:19:17.000Z""",C-47875,O-2487-91,9,Item is defective,Return Accepted,susana.krumm@pancast.me
+29,Return to Customer,"""2019-11-15T03:19:17.000Z""",C-47875,O-2487-91,9,Item is defective,Return Accepted,susana.krumm@pancast.me
+30,RMA Requested,"""2019-03-01T04:52:40.000Z""",C-88052,O-4247-31,4,Item is defective,,florance.garling@polygan.me
+30,RMA Issued,"""2019-03-01T05:06:40.000Z""",C-88052,O-4247-31,4,Item is defective,,florance.garling@polygan.me
+30,ASN Received,"""2019-03-02T11:06:40.000Z""",C-88052,O-4247-31,4,Item is defective,,florance.garling@polygan.me
+30,Item Received,"""2019-03-06T11:06:40.000Z""",C-88052,O-4247-31,4,Item is defective,,florance.garling@polygan.me
+30,Item Inspected,"""2019-03-10T11:06:40.000Z""",C-88052,O-4247-31,4,Item is defective,Return Accepted,florance.garling@polygan.me
+30,Defective Item,"""2019-03-10T11:14:40.000Z""",C-88052,O-4247-31,4,Item is defective,Return Accepted,florance.garling@polygan.me
+30,Repair Item,"""2019-03-12T05:14:40.000Z""",C-88052,O-4247-31,4,Item is defective,Return Accepted,florance.garling@polygan.me
+30,Fixed,"""2019-03-13T19:14:40.000Z""",C-88052,O-4247-31,4,Item is defective,Return Accepted,florance.garling@polygan.me
+30,Return to Customer,"""2019-03-14T07:14:40.000Z""",C-88052,O-4247-31,4,Item is defective,Return Accepted,florance.garling@polygan.me
+31,RMA Requested,"""2019-09-11T02:11:44.000Z""",C-55926,O-2964-75,7,Wrong Size,,miles.drolet@keysoft.xyz
+31,RMA Issued,"""2019-09-11T02:20:44.000Z""",C-55926,O-2964-75,7,Wrong Size,,miles.drolet@keysoft.xyz
+31,ASN Received,"""2019-09-11T08:20:44.000Z""",C-55926,O-2964-75,7,Wrong Size,,miles.drolet@keysoft.xyz
+31,Item Received,"""2019-09-16T08:20:44.000Z""",C-55926,O-2964-75,7,Wrong Size,,miles.drolet@keysoft.xyz
+31,Item Inspected,"""2019-09-22T08:20:44.000Z""",C-55926,O-2964-75,7,Wrong Size,Return Accepted,miles.drolet@keysoft.xyz
+31,Customer Sat,"""2019-09-22T08:24:44.000Z""",C-55926,O-2964-75,7,Wrong Size,Return Accepted,miles.drolet@keysoft.xyz
+31,Return to Stock,"""2019-09-22T08:30:44.000Z""",C-55926,O-2964-75,7,Wrong Size,Return Accepted,miles.drolet@keysoft.xyz
+32,RMA Requested,"""2019-10-29T03:31:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,,raymond.hyder@optiplex.org
+32,RMA Issued,"""2019-10-29T03:39:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,,raymond.hyder@optiplex.org
+32,ASN Received,"""2019-10-29T22:39:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,,raymond.hyder@optiplex.org
+32,Item Received,"""2019-11-04T22:39:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,,raymond.hyder@optiplex.org
+32,Item Inspected,"""2019-11-08T22:39:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,Return Accepted,raymond.hyder@optiplex.org
+32,Customer Sat,"""2019-11-08T22:40:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,Return Accepted,raymond.hyder@optiplex.org
+32,Return to Stock,"""2019-11-08T22:43:11.000Z""",C-28214,O-4313-53,4,Wrong Item Shipped,Return Accepted,raymond.hyder@optiplex.org
+33,RMA Requested,"""2019-12-20T01:49:29.000Z""",C-21040,O-5621-27,8,Wrong Size,,andy.zobel@kancom.name
+33,RMA Issued,"""2019-12-20T01:58:29.000Z""",C-21040,O-5621-27,8,Wrong Size,,andy.zobel@kancom.name
+33,ASN Received,"""2019-12-21T09:58:29.000Z""",C-21040,O-5621-27,8,Wrong Size,,andy.zobel@kancom.name
+33,Item Received,"""2019-12-25T09:58:29.000Z""",C-21040,O-5621-27,8,Wrong Size,,andy.zobel@kancom.name
+33,Item Inspected,"""2019-12-30T09:58:29.000Z""",C-21040,O-5621-27,8,Wrong Size,Return Accepted,andy.zobel@kancom.name
+33,Customer Sat,"""2019-12-30T10:06:29.000Z""",C-21040,O-5621-27,8,Wrong Size,Return Accepted,andy.zobel@kancom.name
+33,Return to Stock,"""2019-12-30T10:09:29.000Z""",C-21040,O-5621-27,8,Wrong Size,Return Accepted,andy.zobel@kancom.name
+34,RMA Requested,"""2020-02-10T05:01:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,,kirstie.leath@infracom.gov
+34,RMA Issued,"""2020-02-10T05:13:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,,kirstie.leath@infracom.gov
+34,ASN Received,"""2020-02-10T08:13:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,,kirstie.leath@infracom.gov
+34,Item Received,"""2020-02-15T08:13:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,,kirstie.leath@infracom.gov
+34,Item Inspected,"""2020-02-21T08:13:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,Return Accepted,kirstie.leath@infracom.gov
+34,Customer Sat,"""2020-02-21T08:20:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,Return Accepted,kirstie.leath@infracom.gov
+34,Return to Stock,"""2020-02-21T08:29:33.000Z""",C-19058,O-1390-62,20,Wrong Item Shipped,Return Accepted,kirstie.leath@infracom.gov
+35,RMA Requested,"""2019-05-16T10:26:04.000Z""",C-88285,O-2667-20,7,Wrong Size,,haley.carter@viewtopia.club
+35,RMA Issued,"""2019-05-16T10:31:04.000Z""",C-88285,O-2667-20,7,Wrong Size,,haley.carter@viewtopia.club
+35,ASN Received,"""2019-05-18T09:31:04.000Z""",C-88285,O-2667-20,7,Wrong Size,,haley.carter@viewtopia.club
+35,Item Received,"""2019-05-24T09:31:04.000Z""",C-88285,O-2667-20,7,Wrong Size,,haley.carter@viewtopia.club
+35,Item Inspected,"""2019-05-30T09:31:04.000Z""",C-88285,O-2667-20,7,Wrong Size,Return Accepted,haley.carter@viewtopia.club
+35,Customer Sat,"""2019-05-30T09:35:04.000Z""",C-88285,O-2667-20,7,Wrong Size,Return Accepted,haley.carter@viewtopia.club
+35,Return to Stock,"""2019-05-30T09:40:04.000Z""",C-88285,O-2667-20,7,Wrong Size,Return Accepted,haley.carter@viewtopia.club
+36,RMA Requested,"""2019-11-20T05:04:01.000Z""",C-44386,O-1478-69,10,Wrong Size,,tyler.finn@pancast.biz
+36,RMA Refused,"""2019-11-20T05:15:01.000Z""",C-44386,O-1478-69,10,Wrong Size,,tyler.finn@pancast.biz
+37,RMA Requested,"""2020-01-09T07:52:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,,adam.castleman@thermatek.edu
+37,RMA Issued,"""2020-01-09T08:00:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,,adam.castleman@thermatek.edu
+37,ASN Received,"""2020-01-09T15:00:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,,adam.castleman@thermatek.edu
+37,Item Received,"""2020-01-14T15:00:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,,adam.castleman@thermatek.edu
+37,Item Inspected,"""2020-01-20T15:00:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,Return Accepted,adam.castleman@thermatek.edu
+37,Recall Item,"""2020-01-20T15:04:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,Return Accepted,adam.castleman@thermatek.edu
+37,Repair Item,"""2020-01-21T17:04:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,Return Accepted,adam.castleman@thermatek.edu
+37,Fixed,"""2020-01-22T12:04:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,Return Accepted,adam.castleman@thermatek.edu
+37,Return to Customer,"""2020-01-23T17:04:54.000Z""",C-28035,O-8876-73,20,Item has been recalled,Return Accepted,adam.castleman@thermatek.edu
+38,RMA Requested,"""2020-01-13T12:47:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,,elaine.lenihan@keycast.me
+38,RMA Issued,"""2020-01-13T13:06:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,,elaine.lenihan@keycast.me
+38,ASN Received,"""2020-01-14T23:06:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,,elaine.lenihan@keycast.me
+38,Item Received,"""2020-01-18T23:06:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,,elaine.lenihan@keycast.me
+38,Item Inspected,"""2020-01-24T23:06:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,Return Accepted,elaine.lenihan@keycast.me
+38,Customer Sat,"""2020-01-24T23:12:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,Return Accepted,elaine.lenihan@keycast.me
+38,Return to Stock,"""2020-01-24T23:15:28.000Z""",C-45004,O-2114-15,20,Ordered Wrong Item,Return Accepted,elaine.lenihan@keycast.me
+39,RMA Requested,"""2019-05-18T07:28:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,,madelyn.matzen@sunopia.me
+39,RMA Issued,"""2019-05-18T07:39:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,,madelyn.matzen@sunopia.me
+39,ASN Received,"""2019-05-18T13:39:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,,madelyn.matzen@sunopia.me
+39,Item Received,"""2019-05-21T13:39:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,,madelyn.matzen@sunopia.me
+39,Item Inspected,"""2019-05-27T13:39:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,Return Accepted,madelyn.matzen@sunopia.me
+39,Customer Sat,"""2019-05-27T13:48:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,Return Accepted,madelyn.matzen@sunopia.me
+39,Return to Stock,"""2019-05-27T13:51:27.000Z""",C-13603,O-3033-43,19,Wrong Item Shipped,Return Accepted,madelyn.matzen@sunopia.me
+40,RMA Requested,"""2019-07-28T11:56:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,,mitch.caffey@maxcast.eu
+40,RMA Issued,"""2019-07-28T12:03:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,,mitch.caffey@maxcast.eu
+40,ASN Received,"""2019-07-29T16:03:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,,mitch.caffey@maxcast.eu
+40,Item Received,"""2019-08-04T16:03:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,,mitch.caffey@maxcast.eu
+40,Item Inspected,"""2019-08-08T16:03:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,Return Accepted,mitch.caffey@maxcast.eu
+40,Recall Item,"""2019-08-08T16:06:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,Return Accepted,mitch.caffey@maxcast.eu
+40,Repair Item,"""2019-08-10T02:06:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,Return Accepted,mitch.caffey@maxcast.eu
+40,Fixed,"""2019-08-11T07:06:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,Return Accepted,mitch.caffey@maxcast.eu
+40,Return to Customer,"""2019-08-12T12:06:29.000Z""",C-38818,O-5863-86,8,Item has been recalled,Return Accepted,mitch.caffey@maxcast.eu
+41,RMA Requested,"""2019-07-06T08:00:25.000Z""",C-57430,O-7009-70,5,Item is defective,,rosie.sprowl@dalserve.edu
+41,RMA Issued,"""2019-07-06T08:18:25.000Z""",C-57430,O-7009-70,5,Item is defective,,rosie.sprowl@dalserve.edu
+41,ASN Received,"""2019-07-08T05:18:25.000Z""",C-57430,O-7009-70,5,Item is defective,,rosie.sprowl@dalserve.edu
+41,Item Received,"""2019-07-14T05:18:25.000Z""",C-57430,O-7009-70,5,Item is defective,,rosie.sprowl@dalserve.edu
+41,Item Inspected,"""2019-07-17T05:18:25.000Z""",C-57430,O-7009-70,5,Item is defective,Return Accepted,rosie.sprowl@dalserve.edu
+41,Defective Item,"""2019-07-17T05:24:25.000Z""",C-57430,O-7009-70,5,Item is defective,Return Accepted,rosie.sprowl@dalserve.edu
+41,Repair Item,"""2019-07-18T09:24:25.000Z""",C-57430,O-7009-70,5,Item is defective,Return Accepted,rosie.sprowl@dalserve.edu
+41,Fixed,"""2019-07-18T22:24:25.000Z""",C-57430,O-7009-70,5,Item is defective,Return Accepted,rosie.sprowl@dalserve.edu
+41,Return to Customer,"""2019-07-20T04:24:25.000Z""",C-57430,O-7009-70,5,Item is defective,Return Accepted,rosie.sprowl@dalserve.edu
+42,RMA Requested,"""2020-01-31T11:57:06.000Z""",C-66728,O-7676-14,3,Item is defective,,liza.gamble@cryptonica.xyz
+42,RMA Issued,"""2020-01-31T12:12:06.000Z""",C-66728,O-7676-14,3,Item is defective,,liza.gamble@cryptonica.xyz
+42,ASN Received,"""2020-02-01T21:12:06.000Z""",C-66728,O-7676-14,3,Item is defective,,liza.gamble@cryptonica.xyz
+42,Item Received,"""2020-02-07T21:12:06.000Z""",C-66728,O-7676-14,3,Item is defective,,liza.gamble@cryptonica.xyz
+42,Item Inspected,"""2020-02-13T21:12:06.000Z""",C-66728,O-7676-14,3,Item is defective,Return Accepted,liza.gamble@cryptonica.xyz
+42,Defective Item,"""2020-02-13T21:18:06.000Z""",C-66728,O-7676-14,3,Item is defective,Return Accepted,liza.gamble@cryptonica.xyz
+42,Repair Item,"""2020-02-15T16:18:06.000Z""",C-66728,O-7676-14,3,Item is defective,Return Accepted,liza.gamble@cryptonica.xyz
+42,Fixed,"""2020-02-16T20:18:06.000Z""",C-66728,O-7676-14,3,Item is defective,Return Accepted,liza.gamble@cryptonica.xyz
+42,Return to Customer,"""2020-02-17T12:18:06.000Z""",C-66728,O-7676-14,3,Item is defective,Return Accepted,liza.gamble@cryptonica.xyz
+43,RMA Requested,"""2019-07-02T09:51:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,,alexa.sager@helixicon.me
+43,RMA Issued,"""2019-07-02T09:58:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,,alexa.sager@helixicon.me
+43,ASN Received,"""2019-07-02T23:58:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,,alexa.sager@helixicon.me
+43,Item Received,"""2019-07-08T23:58:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,,alexa.sager@helixicon.me
+43,Item Inspected,"""2019-07-14T23:58:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,Return Accepted,alexa.sager@helixicon.me
+43,Customer Sat,"""2019-07-15T00:05:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,Return Accepted,alexa.sager@helixicon.me
+43,Return to Stock,"""2019-07-15T00:06:10.000Z""",C-85945,O-7097-52,19,Ordered Wrong Item,Return Accepted,alexa.sager@helixicon.me
+44,RMA Requested,"""2019-07-26T11:40:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,,juliana.pace@polygan.biz
+44,RMA Issued,"""2019-07-26T11:49:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,,juliana.pace@polygan.biz
+44,ASN Received,"""2019-07-27T02:49:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,,juliana.pace@polygan.biz
+44,Item Received,"""2019-08-02T02:49:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,,juliana.pace@polygan.biz
+44,Item Inspected,"""2019-08-07T02:49:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,Return Accepted,juliana.pace@polygan.biz
+44,Recall Item,"""2019-08-07T02:52:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,Return Accepted,juliana.pace@polygan.biz
+44,Repair Item,"""2019-08-08T02:52:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,Return Accepted,juliana.pace@polygan.biz
+44,Used for Parts,"""2019-08-09T17:52:36.000Z""",C-22021,O-3024-27,7,Item has been recalled,Return Accepted,juliana.pace@polygan.biz
+45,RMA Requested,"""2020-01-07T12:55:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,,max.bickers@acousticom.club
+45,RMA Issued,"""2020-01-07T13:06:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,,max.bickers@acousticom.club
+45,ASN Received,"""2020-01-08T10:06:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,,max.bickers@acousticom.club
+45,Item Received,"""2020-01-14T10:06:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,,max.bickers@acousticom.club
+45,Item Inspected,"""2020-01-19T10:06:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,Return Accepted,max.bickers@acousticom.club
+45,Customer Sat,"""2020-01-19T10:09:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,Return Accepted,max.bickers@acousticom.club
+45,Return to Stock,"""2020-01-19T10:14:13.000Z""",C-69832,O-5667-99,13,Ordered Wrong Item,Return Accepted,max.bickers@acousticom.club
+46,RMA Requested,"""2020-01-10T11:40:28.000Z""",C-31054,O-2104-85,10,Wrong Size,,rikki.seal@infratouch.com
+46,RMA Issued,"""2020-01-10T11:52:28.000Z""",C-31054,O-2104-85,10,Wrong Size,,rikki.seal@infratouch.com
+46,ASN Received,"""2020-01-10T14:52:28.000Z""",C-31054,O-2104-85,10,Wrong Size,,rikki.seal@infratouch.com
+46,Item Received,"""2020-01-15T14:52:28.000Z""",C-31054,O-2104-85,10,Wrong Size,,rikki.seal@infratouch.com
+46,Item Inspected,"""2020-01-21T14:52:28.000Z""",C-31054,O-2104-85,10,Wrong Size,Return Accepted,rikki.seal@infratouch.com
+46,Customer Sat,"""2020-01-21T14:57:28.000Z""",C-31054,O-2104-85,10,Wrong Size,Return Accepted,rikki.seal@infratouch.com
+46,Return to Stock,"""2020-01-21T15:02:28.000Z""",C-31054,O-2104-85,10,Wrong Size,Return Accepted,rikki.seal@infratouch.com
+47,RMA Requested,"""2019-09-26T10:00:07.000Z""",C-39587,O-9427-36,14,Wrong Size,,joslyn.sprowl@eluxa.info
+47,RMA Issued,"""2019-09-26T10:15:07.000Z""",C-39587,O-9427-36,14,Wrong Size,,joslyn.sprowl@eluxa.info
+47,ASN Received,"""2019-09-26T20:15:07.000Z""",C-39587,O-9427-36,14,Wrong Size,,joslyn.sprowl@eluxa.info
+47,Item Received,"""2019-09-29T20:15:07.000Z""",C-39587,O-9427-36,14,Wrong Size,,joslyn.sprowl@eluxa.info
+47,Item Inspected,"""2019-10-03T20:15:07.000Z""",C-39587,O-9427-36,14,Wrong Size,Return Accepted,joslyn.sprowl@eluxa.info
+47,Customer Sat,"""2019-10-03T20:19:07.000Z""",C-39587,O-9427-36,14,Wrong Size,Return Accepted,joslyn.sprowl@eluxa.info
+47,Return to Stock,"""2019-10-03T20:28:07.000Z""",C-39587,O-9427-36,14,Wrong Size,Return Accepted,joslyn.sprowl@eluxa.info
+48,RMA Requested,"""2019-08-03T11:13:06.000Z""",C-62036,O-2774-58,5,Item is defective,,marcus.hyder@seelogic.biz
+48,RMA Issued,"""2019-08-03T11:25:06.000Z""",C-62036,O-2774-58,5,Item is defective,,marcus.hyder@seelogic.biz
+48,ASN Received,"""2019-08-04T01:25:06.000Z""",C-62036,O-2774-58,5,Item is defective,,marcus.hyder@seelogic.biz
+48,Item Received,"""2019-08-10T01:25:06.000Z""",C-62036,O-2774-58,5,Item is defective,,marcus.hyder@seelogic.biz
+48,Item Inspected,"""2019-08-16T01:25:06.000Z""",C-62036,O-2774-58,5,Item is defective,Return Accepted,marcus.hyder@seelogic.biz
+48,Defective Item,"""2019-08-16T01:34:06.000Z""",C-62036,O-2774-58,5,Item is defective,Return Accepted,marcus.hyder@seelogic.biz
+48,Repair Item,"""2019-08-17T10:34:06.000Z""",C-62036,O-2774-58,5,Item is defective,Return Accepted,marcus.hyder@seelogic.biz
+48,Fixed,"""2019-08-19T09:34:06.000Z""",C-62036,O-2774-58,5,Item is defective,Return Accepted,marcus.hyder@seelogic.biz
+48,Return to Stock,"""2019-08-19T09:39:06.000Z""",C-62036,O-2774-58,5,Item is defective,Return Accepted,marcus.hyder@seelogic.biz
+49,RMA Requested,"""2019-08-25T12:05:54.000Z""",C-88881,O-1078-93,1,Item is defective,,juliana.drolet@dynaroc.com
+49,RMA Issued,"""2019-08-25T12:23:54.000Z""",C-88881,O-1078-93,1,Item is defective,,juliana.drolet@dynaroc.com
+49,ASN Received,"""2019-08-27T11:23:54.000Z""",C-88881,O-1078-93,1,Item is defective,,juliana.drolet@dynaroc.com
+49,Item Received,"""2019-09-01T11:23:54.000Z""",C-88881,O-1078-93,1,Item is defective,,juliana.drolet@dynaroc.com
+49,Item Inspected,"""2019-09-04T11:23:54.000Z""",C-88881,O-1078-93,1,Item is defective,Return Accepted,juliana.drolet@dynaroc.com
+49,Defective Item,"""2019-09-04T11:24:54.000Z""",C-88881,O-1078-93,1,Item is defective,Return Accepted,juliana.drolet@dynaroc.com
+49,Repair Item,"""2019-09-06T01:24:54.000Z""",C-88881,O-1078-93,1,Item is defective,Return Accepted,juliana.drolet@dynaroc.com
+49,Fixed,"""2019-09-06T21:24:54.000Z""",C-88881,O-1078-93,1,Item is defective,Return Accepted,juliana.drolet@dynaroc.com
+49,Return to Stock,"""2019-09-06T21:31:54.000Z""",C-88881,O-1078-93,1,Item is defective,Return Accepted,juliana.drolet@dynaroc.com
+50,RMA Requested,"""2019-09-09T03:45:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,,lyn.stine@hassifix.co
+50,RMA Issued,"""2019-09-09T04:00:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,,lyn.stine@hassifix.co
+50,ASN Received,"""2019-09-10T07:00:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,,lyn.stine@hassifix.co
+50,Item Received,"""2019-09-16T07:00:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,,lyn.stine@hassifix.co
+50,Item Inspected,"""2019-09-21T07:00:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,Return Accepted,lyn.stine@hassifix.co
+50,Customer Sat,"""2019-09-21T07:01:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,Return Accepted,lyn.stine@hassifix.co
+50,Return to Stock,"""2019-09-21T07:07:37.000Z""",C-39455,O-6255-65,16,Ordered Wrong Item,Return Accepted,lyn.stine@hassifix.co
+51,RMA Requested,"""2019-04-11T04:57:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,,mitch.pendergast@hypervision.eu
+51,RMA Issued,"""2019-04-11T05:13:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,,mitch.pendergast@hypervision.eu
+51,ASN Received,"""2019-04-11T10:13:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,,mitch.pendergast@hypervision.eu
+51,Item Received,"""2019-04-16T10:13:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,,mitch.pendergast@hypervision.eu
+51,Item Inspected,"""2019-04-22T10:13:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,Return Accepted,mitch.pendergast@hypervision.eu
+51,Customer Sat,"""2019-04-22T10:18:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,Return Accepted,mitch.pendergast@hypervision.eu
+51,Return to Stock,"""2019-04-22T10:26:02.000Z""",C-43797,O-1196-99,4,Ordered Wrong Item,Return Accepted,mitch.pendergast@hypervision.eu
+52,RMA Requested,"""2019-07-03T10:04:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,,dannielle.starck@hypervision.eu
+52,RMA Issued,"""2019-07-03T10:16:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,,dannielle.starck@hypervision.eu
+52,ASN Received,"""2019-07-04T16:16:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,,dannielle.starck@hypervision.eu
+52,Item Received,"""2019-07-08T16:16:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,,dannielle.starck@hypervision.eu
+52,Item Inspected,"""2019-07-14T16:16:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,Return Accepted,dannielle.starck@hypervision.eu
+52,Customer Sat,"""2019-07-14T16:21:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,Return Accepted,dannielle.starck@hypervision.eu
+52,Return to Stock,"""2019-07-14T16:28:08.000Z""",C-32456,O-3051-33,9,Ordered Wrong Item,Return Accepted,dannielle.starck@hypervision.eu
+53,RMA Requested,"""2020-02-10T05:38:08.000Z""",C-87511,O-4835-86,17,Item is defective,,lloyd.castleman@kancom.xyz
+53,RMA Issued,"""2020-02-10T05:43:08.000Z""",C-87511,O-4835-86,17,Item is defective,,lloyd.castleman@kancom.xyz
+53,ASN Received,"""2020-02-10T10:43:08.000Z""",C-87511,O-4835-86,17,Item is defective,,lloyd.castleman@kancom.xyz
+53,Item Received,"""2020-02-15T10:43:08.000Z""",C-87511,O-4835-86,17,Item is defective,,lloyd.castleman@kancom.xyz
+53,Item Inspected,"""2020-02-20T10:43:08.000Z""",C-87511,O-4835-86,17,Item is defective,Return Accepted,lloyd.castleman@kancom.xyz
+53,Defective Item,"""2020-02-20T10:48:08.000Z""",C-87511,O-4835-86,17,Item is defective,Return Accepted,lloyd.castleman@kancom.xyz
+53,Repair Item,"""2020-02-21T12:48:08.000Z""",C-87511,O-4835-86,17,Item is defective,Return Accepted,lloyd.castleman@kancom.xyz
+53,Used for Parts,"""2020-02-22T17:48:08.000Z""",C-87511,O-4835-86,17,Item is defective,Return Accepted,lloyd.castleman@kancom.xyz
+54,RMA Requested,"""2019-04-03T12:43:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,,hannah.oldman@infratouch.eu
+54,RMA Issued,"""2019-04-03T12:50:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,,hannah.oldman@infratouch.eu
+54,ASN Received,"""2019-04-04T18:50:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,,hannah.oldman@infratouch.eu
+54,Item Received,"""2019-04-08T18:50:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,,hannah.oldman@infratouch.eu
+54,Item Inspected,"""2019-04-13T18:50:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,Return Accepted,hannah.oldman@infratouch.eu
+54,Customer Sat,"""2019-04-13T18:58:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,Return Accepted,hannah.oldman@infratouch.eu
+54,Return to Stock,"""2019-04-13T19:06:19.000Z""",C-73210,O-8746-94,4,Ordered Wrong Item,Return Accepted,hannah.oldman@infratouch.eu
+55,RMA Requested,"""2020-01-19T08:01:45.000Z""",C-26142,O-7116-17,5,Item is defective,,francis.brier@mediadime.net
+55,RMA Issued,"""2020-01-19T08:06:45.000Z""",C-26142,O-7116-17,5,Item is defective,,francis.brier@mediadime.net
+55,ASN Received,"""2020-01-21T07:06:45.000Z""",C-26142,O-7116-17,5,Item is defective,,francis.brier@mediadime.net
+55,Item Received,"""2020-01-24T07:06:45.000Z""",C-26142,O-7116-17,5,Item is defective,,francis.brier@mediadime.net
+55,Item Inspected,"""2020-01-28T07:06:45.000Z""",C-26142,O-7116-17,5,Item is defective,Return Accepted,francis.brier@mediadime.net
+55,Defective Item,"""2020-01-28T07:11:45.000Z""",C-26142,O-7116-17,5,Item is defective,Return Accepted,francis.brier@mediadime.net
+55,Repair Item,"""2020-01-29T13:11:45.000Z""",C-26142,O-7116-17,5,Item is defective,Return Accepted,francis.brier@mediadime.net
+55,Return to OEM,"""2020-01-31T12:11:45.000Z""",C-26142,O-7116-17,5,Item is defective,Return Accepted,francis.brier@mediadime.net
+56,RMA Requested,"""2019-11-25T12:39:49.000Z""",C-63722,O-3558-41,13,Item is defective,,tyler.rikard@eluxa.co
+56,RMA Issued,"""2019-11-25T12:53:49.000Z""",C-63722,O-3558-41,13,Item is defective,,tyler.rikard@eluxa.co
+56,ASN Received,"""2019-11-26T07:53:49.000Z""",C-63722,O-3558-41,13,Item is defective,,tyler.rikard@eluxa.co
+56,Item Received,"""2019-12-01T07:53:49.000Z""",C-63722,O-3558-41,13,Item is defective,,tyler.rikard@eluxa.co
+56,Item Inspected,"""2019-12-07T07:53:49.000Z""",C-63722,O-3558-41,13,Item is defective,Return Accepted,tyler.rikard@eluxa.co
+56,Defective Item,"""2019-12-07T08:01:49.000Z""",C-63722,O-3558-41,13,Item is defective,Return Accepted,tyler.rikard@eluxa.co
+56,Repair Item,"""2019-12-08T20:01:49.000Z""",C-63722,O-3558-41,13,Item is defective,Return Accepted,tyler.rikard@eluxa.co
+56,Fixed,"""2019-12-09T10:01:49.000Z""",C-63722,O-3558-41,13,Item is defective,Return Accepted,tyler.rikard@eluxa.co
+56,Return to Customer,"""2019-12-11T03:01:49.000Z""",C-63722,O-3558-41,13,Item is defective,Return Accepted,tyler.rikard@eluxa.co
+57,RMA Requested,"""2020-02-16T11:13:47.000Z""",C-73493,O-2708-18,18,Wrong Size,,madeleine.porras@sixtysix.biz
+57,RMA Issued,"""2020-02-16T11:22:47.000Z""",C-73493,O-2708-18,18,Wrong Size,,madeleine.porras@sixtysix.biz
+57,ASN Received,"""2020-02-17T18:22:47.000Z""",C-73493,O-2708-18,18,Wrong Size,,madeleine.porras@sixtysix.biz
+57,Item Received,"""2020-02-20T18:22:47.000Z""",C-73493,O-2708-18,18,Wrong Size,,madeleine.porras@sixtysix.biz
+57,Item Inspected,"""2020-02-26T18:22:47.000Z""",C-73493,O-2708-18,18,Wrong Size,Return Accepted,madeleine.porras@sixtysix.biz
+57,Customer Sat,"""2020-02-26T18:30:47.000Z""",C-73493,O-2708-18,18,Wrong Size,Return Accepted,madeleine.porras@sixtysix.biz
+57,Return to Stock,"""2020-02-26T18:32:47.000Z""",C-73493,O-2708-18,18,Wrong Size,Return Accepted,madeleine.porras@sixtysix.biz
+58,RMA Requested,"""2019-05-14T01:43:00.000Z""",C-24348,O-3474-88,12,Wrong Size,,benito.pleiman@duoserve.club
+58,RMA Issued,"""2019-05-14T01:53:00.000Z""",C-24348,O-3474-88,12,Wrong Size,,benito.pleiman@duoserve.club
+58,ASN Received,"""2019-05-14T22:53:00.000Z""",C-24348,O-3474-88,12,Wrong Size,,benito.pleiman@duoserve.club
+58,Item Received,"""2019-05-17T22:53:00.000Z""",C-24348,O-3474-88,12,Wrong Size,,benito.pleiman@duoserve.club
+58,Item Inspected,"""2019-05-22T22:53:00.000Z""",C-24348,O-3474-88,12,Wrong Size,Return Accepted,benito.pleiman@duoserve.club
+58,Customer Sat,"""2019-05-22T22:56:00.000Z""",C-24348,O-3474-88,12,Wrong Size,Return Accepted,benito.pleiman@duoserve.club
+58,Return to Stock,"""2019-05-22T23:01:00.000Z""",C-24348,O-3474-88,12,Wrong Size,Return Accepted,benito.pleiman@duoserve.club
+59,RMA Requested,"""2019-03-25T06:47:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,,drew.milling@foretrust.co
+59,RMA Issued,"""2019-03-25T06:53:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,,drew.milling@foretrust.co
+59,ASN Received,"""2019-03-26T21:53:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,,drew.milling@foretrust.co
+59,Item Received,"""2019-03-31T21:53:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,,drew.milling@foretrust.co
+59,Item Inspected,"""2019-04-06T21:53:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,Return Accepted,drew.milling@foretrust.co
+59,Customer Sat,"""2019-04-06T21:55:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,Return Accepted,drew.milling@foretrust.co
+59,Return to Stock,"""2019-04-06T22:02:48.000Z""",C-42155,O-2501-72,4,Wrong Item Shipped,Return Accepted,drew.milling@foretrust.co
+60,RMA Requested,"""2019-12-01T08:07:14.000Z""",C-39582,O-8442-25,20,Ordered Wrong Item,,curtis.keesee@thermatek.club
+60,RMA Refused,"""2019-12-01T08:13:14.000Z""",C-39582,O-8442-25,20,Ordered Wrong Item,,curtis.keesee@thermatek.club
+61,RMA Requested,"""2019-04-28T03:12:38.000Z""",C-85597,O-5936-30,15,Wrong Item Shipped,,raylene.gilmore@keycast.co
+61,RMA Issued,"""2019-04-28T03:28:38.000Z""",C-85597,O-5936-30,15,Wrong Item Shipped,,raylene.gilmore@keycast.co
+61,ASN Received,"""2019-04-29T13:28:38.000Z""",C-85597,O-5936-30,15,Wrong Item Shipped,,raylene.gilmore@keycast.co
+61,Item Received,"""2019-05-04T13:28:38.000Z""",C-85597,O-5936-30,15,Wrong Item Shipped,,raylene.gilmore@keycast.co
+61,Item Inspected,"""2019-05-09T13:28:38.000Z""",C-85597,O-5936-30,15,Wrong Item Shipped,Return Rejected,raylene.gilmore@keycast.co
+61,Reject Return,"""2019-05-09T13:36:38.000Z""",C-85597,O-5936-30,15,Unable to accept return - out of policy,Return Rejected,raylene.gilmore@keycast.co
+61,Return to Customer,"""2019-05-10T09:36:38.000Z""",C-85597,O-5936-30,15,Unable to accept return - out of policy,Return Rejected,raylene.gilmore@keycast.co
+62,RMA Requested,"""2019-09-24T03:59:00.000Z""",C-71473,O-9545-90,11,Wrong Size,,warren.caffey@westercom.biz
+62,RMA Issued,"""2019-09-24T04:07:00.000Z""",C-71473,O-9545-90,11,Wrong Size,,warren.caffey@westercom.biz
+62,ASN Received,"""2019-09-25T06:07:00.000Z""",C-71473,O-9545-90,11,Wrong Size,,warren.caffey@westercom.biz
+62,Item Received,"""2019-09-28T06:07:00.000Z""",C-71473,O-9545-90,11,Wrong Size,,warren.caffey@westercom.biz
+62,Item Inspected,"""2019-10-02T06:07:00.000Z""",C-71473,O-9545-90,11,Wrong Size,Return Accepted,warren.caffey@westercom.biz
+62,Customer Sat,"""2019-10-02T06:14:00.000Z""",C-71473,O-9545-90,11,Wrong Size,Return Accepted,warren.caffey@westercom.biz
+62,Return to Stock,"""2019-10-02T06:16:00.000Z""",C-71473,O-9545-90,11,Wrong Size,Return Accepted,warren.caffey@westercom.biz
+63,RMA Requested,"""2019-10-25T01:01:56.000Z""",C-39905,O-9534-82,17,Wrong Size,,rikki.gamble@superwire.org
+63,RMA Issued,"""2019-10-25T01:06:56.000Z""",C-39905,O-9534-82,17,Wrong Size,,rikki.gamble@superwire.org
+63,ASN Received,"""2019-10-26T09:06:56.000Z""",C-39905,O-9534-82,17,Wrong Size,,rikki.gamble@superwire.org
+63,Item Received,"""2019-10-31T09:06:56.000Z""",C-39905,O-9534-82,17,Wrong Size,,rikki.gamble@superwire.org
+63,Item Inspected,"""2019-11-03T09:06:56.000Z""",C-39905,O-9534-82,17,Wrong Size,Return Accepted,rikki.gamble@superwire.org
+63,Customer Sat,"""2019-11-03T09:07:56.000Z""",C-39905,O-9534-82,17,Wrong Size,Return Accepted,rikki.gamble@superwire.org
+63,Return to Stock,"""2019-11-03T09:11:56.000Z""",C-39905,O-9534-82,17,Wrong Size,Return Accepted,rikki.gamble@superwire.org
+64,RMA Requested,"""2019-07-22T10:04:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,,marcus.bradbury@solexis.info
+64,RMA Issued,"""2019-07-22T10:15:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,,marcus.bradbury@solexis.info
+64,ASN Received,"""2019-07-22T17:15:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,,marcus.bradbury@solexis.info
+64,Item Received,"""2019-07-28T17:15:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,,marcus.bradbury@solexis.info
+64,Item Inspected,"""2019-08-01T17:15:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,Return Accepted,marcus.bradbury@solexis.info
+64,Customer Sat,"""2019-08-01T17:16:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,Return Accepted,marcus.bradbury@solexis.info
+64,Return to Stock,"""2019-08-01T17:22:40.000Z""",C-54798,O-5674-20,2,Wrong Item Shipped,Return Accepted,marcus.bradbury@solexis.info
+65,RMA Requested,"""2019-10-16T09:33:28.000Z""",C-54342,O-4920-12,13,Item is defective,,victoria.seabury@haltheon.org
+65,RMA Issued,"""2019-10-16T09:48:28.000Z""",C-54342,O-4920-12,13,Item is defective,,victoria.seabury@haltheon.org
+65,ASN Received,"""2019-10-17T09:48:28.000Z""",C-54342,O-4920-12,13,Item is defective,,victoria.seabury@haltheon.org
+65,Item Received,"""2019-10-20T09:48:28.000Z""",C-54342,O-4920-12,13,Item is defective,,victoria.seabury@haltheon.org
+65,Item Inspected,"""2019-10-25T09:48:28.000Z""",C-54342,O-4920-12,13,Item is defective,Return Accepted,victoria.seabury@haltheon.org
+65,Defective Item,"""2019-10-25T09:55:28.000Z""",C-54342,O-4920-12,13,Item is defective,Return Accepted,victoria.seabury@haltheon.org
+65,Repair Item,"""2019-10-26T22:55:28.000Z""",C-54342,O-4920-12,13,Item is defective,Return Accepted,victoria.seabury@haltheon.org
+65,Fixed,"""2019-10-28T07:55:28.000Z""",C-54342,O-4920-12,13,Item is defective,Return Accepted,victoria.seabury@haltheon.org
+65,Return to Stock,"""2019-10-28T08:01:28.000Z""",C-54342,O-4920-12,13,Item is defective,Return Accepted,victoria.seabury@haltheon.org
+66,RMA Requested,"""2019-02-11T01:11:33.000Z""",C-73725,O-8254-82,8,Item is defective,,rikki.finn@logico.info
+66,RMA Issued,"""2019-02-11T01:28:33.000Z""",C-73725,O-8254-82,8,Item is defective,,rikki.finn@logico.info
+66,ASN Received,"""2019-02-11T18:28:33.000Z""",C-73725,O-8254-82,8,Item is defective,,rikki.finn@logico.info
+66,Item Received,"""2019-02-14T18:28:33.000Z""",C-73725,O-8254-82,8,Item is defective,,rikki.finn@logico.info
+66,Item Inspected,"""2019-02-18T18:28:33.000Z""",C-73725,O-8254-82,8,Item is defective,Return Accepted,rikki.finn@logico.info
+66,Defective Item,"""2019-02-18T18:32:33.000Z""",C-73725,O-8254-82,8,Item is defective,Return Accepted,rikki.finn@logico.info
+66,Repair Item,"""2019-02-20T01:32:33.000Z""",C-73725,O-8254-82,8,Item is defective,Return Accepted,rikki.finn@logico.info
+66,Fixed,"""2019-02-21T10:32:33.000Z""",C-73725,O-8254-82,8,Item is defective,Return Accepted,rikki.finn@logico.info
+66,Return to Stock,"""2019-02-21T10:38:33.000Z""",C-73725,O-8254-82,8,Item is defective,Return Accepted,rikki.finn@logico.info
+67,RMA Requested,"""2019-01-27T04:28:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,,vernon.drolet@templatek.xyz
+67,RMA Issued,"""2019-01-27T04:33:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,,vernon.drolet@templatek.xyz
+67,ASN Received,"""2019-01-28T12:33:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,,vernon.drolet@templatek.xyz
+67,Item Received,"""2019-02-01T12:33:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,,vernon.drolet@templatek.xyz
+67,Item Inspected,"""2019-02-05T12:33:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,Return Accepted,vernon.drolet@templatek.xyz
+67,Customer Sat,"""2019-02-05T12:38:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,Return Accepted,vernon.drolet@templatek.xyz
+67,Return to Stock,"""2019-02-05T12:47:07.000Z""",C-52727,O-5370-87,10,Ordered Wrong Item,Return Accepted,vernon.drolet@templatek.xyz
+68,RMA Requested,"""2019-10-15T05:22:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,,jocelyn.flinn@corerobotics.name
+68,RMA Issued,"""2019-10-15T05:31:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,,jocelyn.flinn@corerobotics.name
+68,ASN Received,"""2019-10-17T04:31:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,,jocelyn.flinn@corerobotics.name
+68,Item Received,"""2019-10-20T04:31:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,,jocelyn.flinn@corerobotics.name
+68,Item Inspected,"""2019-10-23T04:31:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,Return Accepted,jocelyn.flinn@corerobotics.name
+68,Customer Sat,"""2019-10-23T04:34:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,Return Accepted,jocelyn.flinn@corerobotics.name
+68,Return to Stock,"""2019-10-23T04:38:00.000Z""",C-13747,O-3478-21,10,Wrong Item Shipped,Return Accepted,jocelyn.flinn@corerobotics.name
+69,RMA Requested,"""2019-11-30T02:38:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,,cyrus.dampier@britech.club
+69,RMA Issued,"""2019-11-30T02:54:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,,cyrus.dampier@britech.club
+69,ASN Received,"""2019-12-01T00:54:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,,cyrus.dampier@britech.club
+69,Item Received,"""2019-12-07T00:54:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,,cyrus.dampier@britech.club
+69,Item Inspected,"""2019-12-10T00:54:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,Return Accepted,cyrus.dampier@britech.club
+69,Customer Sat,"""2019-12-10T00:59:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,Return Accepted,cyrus.dampier@britech.club
+69,Return to Stock,"""2019-12-10T01:04:54.000Z""",C-31572,O-1159-74,19,Ordered Wrong Item,Return Accepted,cyrus.dampier@britech.club
+70,RMA Requested,"""2019-04-09T12:51:50.000Z""",C-52029,O-1959-38,11,Item is defective,,kathy.chapman@protheon.com
+70,RMA Issued,"""2019-04-09T12:56:50.000Z""",C-52029,O-1959-38,11,Item is defective,,kathy.chapman@protheon.com
+70,ASN Received,"""2019-04-09T17:56:50.000Z""",C-52029,O-1959-38,11,Item is defective,,kathy.chapman@protheon.com
+70,Item Received,"""2019-04-12T17:56:50.000Z""",C-52029,O-1959-38,11,Item is defective,,kathy.chapman@protheon.com
+70,Item Inspected,"""2019-04-18T17:56:50.000Z""",C-52029,O-1959-38,11,Item is defective,Return Accepted,kathy.chapman@protheon.com
+70,Defective Item,"""2019-04-18T18:02:50.000Z""",C-52029,O-1959-38,11,Item is defective,Return Accepted,kathy.chapman@protheon.com
+70,Repair Item,"""2019-04-19T09:02:50.000Z""",C-52029,O-1959-38,11,Item is defective,Return Accepted,kathy.chapman@protheon.com
+70,Fixed,"""2019-04-20T07:02:50.000Z""",C-52029,O-1959-38,11,Item is defective,Return Accepted,kathy.chapman@protheon.com
+70,Return to Customer,"""2019-04-21T22:02:50.000Z""",C-52029,O-1959-38,11,Item is defective,Return Accepted,kathy.chapman@protheon.com
+71,RMA Requested,"""2020-02-11T04:52:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,,shea.rikard@multiserv.me
+71,RMA Issued,"""2020-02-11T05:02:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,,shea.rikard@multiserv.me
+71,ASN Received,"""2020-02-12T00:02:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,,shea.rikard@multiserv.me
+71,Item Received,"""2020-02-15T00:02:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,,shea.rikard@multiserv.me
+71,Item Inspected,"""2020-02-18T00:02:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,Return Accepted,shea.rikard@multiserv.me
+71,Customer Sat,"""2020-02-18T00:10:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,Return Accepted,shea.rikard@multiserv.me
+71,Return to Stock,"""2020-02-18T00:13:14.000Z""",C-69665,O-7412-57,10,Wrong Item Shipped,Return Accepted,shea.rikard@multiserv.me
+72,RMA Requested,"""2019-11-22T10:54:56.000Z""",C-46131,O-8043-27,5,Wrong Size,,jenna.rohloff@viewtopia.co
+72,RMA Issued,"""2019-11-22T10:59:56.000Z""",C-46131,O-8043-27,5,Wrong Size,,jenna.rohloff@viewtopia.co
+72,ASN Received,"""2019-11-23T10:59:56.000Z""",C-46131,O-8043-27,5,Wrong Size,,jenna.rohloff@viewtopia.co
+72,Item Received,"""2019-11-28T10:59:56.000Z""",C-46131,O-8043-27,5,Wrong Size,,jenna.rohloff@viewtopia.co
+72,Item Inspected,"""2019-12-02T10:59:56.000Z""",C-46131,O-8043-27,5,Wrong Size,Return Accepted,jenna.rohloff@viewtopia.co
+72,Customer Sat,"""2019-12-02T11:06:56.000Z""",C-46131,O-8043-27,5,Wrong Size,Return Accepted,jenna.rohloff@viewtopia.co
+72,Return to Stock,"""2019-12-02T11:13:56.000Z""",C-46131,O-8043-27,5,Wrong Size,Return Accepted,jenna.rohloff@viewtopia.co
+73,RMA Requested,"""2019-08-31T09:02:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,,raisa.rebelo@dalserve.xyz
+73,RMA Issued,"""2019-08-31T09:10:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,,raisa.rebelo@dalserve.xyz
+73,ASN Received,"""2019-09-01T08:10:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,,raisa.rebelo@dalserve.xyz
+73,Item Received,"""2019-09-07T08:10:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,,raisa.rebelo@dalserve.xyz
+73,Item Inspected,"""2019-09-13T08:10:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,Return Accepted,raisa.rebelo@dalserve.xyz
+73,Customer Sat,"""2019-09-13T08:19:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,Return Accepted,raisa.rebelo@dalserve.xyz
+73,Return to Stock,"""2019-09-13T08:25:38.000Z""",C-59327,O-7307-70,17,Ordered Wrong Item,Return Accepted,raisa.rebelo@dalserve.xyz
+74,RMA Requested,"""2019-11-18T05:41:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,,cory.bourne@dynaair.info
+74,RMA Issued,"""2019-11-18T05:58:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,,cory.bourne@dynaair.info
+74,ASN Received,"""2019-11-19T23:58:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,,cory.bourne@dynaair.info
+74,Item Received,"""2019-11-24T23:58:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,,cory.bourne@dynaair.info
+74,Item Inspected,"""2019-11-27T23:58:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,Return Accepted,cory.bourne@dynaair.info
+74,Recall Item,"""2019-11-28T00:07:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,Return Accepted,cory.bourne@dynaair.info
+74,Repair Item,"""2019-11-29T07:07:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,Return Accepted,cory.bourne@dynaair.info
+74,Fixed,"""2019-11-30T04:07:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,Return Accepted,cory.bourne@dynaair.info
+74,Return to Customer,"""2019-12-01T05:07:52.000Z""",C-55859,O-8678-90,18,Item has been recalled,Return Accepted,cory.bourne@dynaair.info
+75,RMA Requested,"""2019-06-19T04:28:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,,jenna.helland@citisys.gov
+75,RMA Issued,"""2019-06-19T04:35:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,,jenna.helland@citisys.gov
+75,ASN Received,"""2019-06-19T14:35:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,,jenna.helland@citisys.gov
+75,Item Received,"""2019-06-22T14:35:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,,jenna.helland@citisys.gov
+75,Item Inspected,"""2019-06-27T14:35:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,Return Accepted,jenna.helland@citisys.gov
+75,Customer Sat,"""2019-06-27T14:38:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,Return Accepted,jenna.helland@citisys.gov
+75,Return to Stock,"""2019-06-27T14:41:42.000Z""",C-83699,O-4565-74,8,Wrong Item Shipped,Return Accepted,jenna.helland@citisys.gov
+76,RMA Requested,"""2019-05-18T12:09:19.000Z""",C-67708,O-3590-70,13,Wrong Size,,lyn.verde@venstrategy.org
+76,RMA Issued,"""2019-05-18T12:16:19.000Z""",C-67708,O-3590-70,13,Wrong Size,,lyn.verde@venstrategy.org
+76,ASN Received,"""2019-05-18T16:16:19.000Z""",C-67708,O-3590-70,13,Wrong Size,,lyn.verde@venstrategy.org
+76,Item Received,"""2019-05-22T16:16:19.000Z""",C-67708,O-3590-70,13,Wrong Size,,lyn.verde@venstrategy.org
+76,Item Inspected,"""2019-05-28T16:16:19.000Z""",C-67708,O-3590-70,13,Wrong Size,Return Accepted,lyn.verde@venstrategy.org
+76,Customer Sat,"""2019-05-28T16:25:19.000Z""",C-67708,O-3590-70,13,Wrong Size,Return Accepted,lyn.verde@venstrategy.org
+76,Return to Stock,"""2019-05-28T16:29:19.000Z""",C-67708,O-3590-70,13,Wrong Size,Return Accepted,lyn.verde@venstrategy.org
+77,RMA Requested,"""2019-09-06T05:16:44.000Z""",C-16913,O-2371-15,10,Wrong Size,,chloe.dampier@infracom.org
+77,RMA Issued,"""2019-09-06T05:26:44.000Z""",C-16913,O-2371-15,10,Wrong Size,,chloe.dampier@infracom.org
+77,ASN Received,"""2019-09-06T15:26:44.000Z""",C-16913,O-2371-15,10,Wrong Size,,chloe.dampier@infracom.org
+77,Item Received,"""2019-09-12T15:26:44.000Z""",C-16913,O-2371-15,10,Wrong Size,,chloe.dampier@infracom.org
+77,Item Inspected,"""2019-09-17T15:26:44.000Z""",C-16913,O-2371-15,10,Wrong Size,Return Accepted,chloe.dampier@infracom.org
+77,Customer Sat,"""2019-09-17T15:32:44.000Z""",C-16913,O-2371-15,10,Wrong Size,Return Accepted,chloe.dampier@infracom.org
+77,Return to Stock,"""2019-09-17T15:39:44.000Z""",C-16913,O-2371-15,10,Wrong Size,Return Accepted,chloe.dampier@infracom.org
+78,RMA Requested,"""2019-12-05T03:57:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,,francis.oldman@playtech.biz
+78,RMA Issued,"""2019-12-05T04:08:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,,francis.oldman@playtech.biz
+78,ASN Received,"""2019-12-06T21:08:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,,francis.oldman@playtech.biz
+78,Item Received,"""2019-12-11T21:08:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,,francis.oldman@playtech.biz
+78,Item Inspected,"""2019-12-14T21:08:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,Return Accepted,francis.oldman@playtech.biz
+78,Customer Sat,"""2019-12-14T21:10:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,Return Accepted,francis.oldman@playtech.biz
+78,Return to Stock,"""2019-12-14T21:15:27.000Z""",C-16160,O-5612-55,19,Wrong Item Shipped,Return Accepted,francis.oldman@playtech.biz
+79,RMA Requested,"""2019-02-05T04:06:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,,lyn.carroll@multiserv.co
+79,RMA Issued,"""2019-02-05T04:14:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,,lyn.carroll@multiserv.co
+79,ASN Received,"""2019-02-06T18:14:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,,lyn.carroll@multiserv.co
+79,Item Received,"""2019-02-12T18:14:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,,lyn.carroll@multiserv.co
+79,Item Inspected,"""2019-02-17T18:14:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,Return Accepted,lyn.carroll@multiserv.co
+79,Customer Sat,"""2019-02-17T18:18:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,Return Accepted,lyn.carroll@multiserv.co
+79,Return to Stock,"""2019-02-17T18:19:35.000Z""",C-13436,O-2783-88,3,Wrong Item Shipped,Return Accepted,lyn.carroll@multiserv.co
+80,RMA Requested,"""2019-09-05T11:56:49.000Z""",C-78880,O-6478-36,1,Item is defective,,madeleine.neal@conixco.me
+80,RMA Issued,"""2019-09-05T12:03:49.000Z""",C-78880,O-6478-36,1,Item is defective,,madeleine.neal@conixco.me
+80,ASN Received,"""2019-09-06T01:03:49.000Z""",C-78880,O-6478-36,1,Item is defective,,madeleine.neal@conixco.me
+80,Item Received,"""2019-09-09T01:03:49.000Z""",C-78880,O-6478-36,1,Item is defective,,madeleine.neal@conixco.me
+80,Item Inspected,"""2019-09-15T01:03:49.000Z""",C-78880,O-6478-36,1,Item is defective,Return Accepted,madeleine.neal@conixco.me
+80,Defective Item,"""2019-09-15T01:11:49.000Z""",C-78880,O-6478-36,1,Item is defective,Return Accepted,madeleine.neal@conixco.me
+80,Repair Item,"""2019-09-16T05:11:49.000Z""",C-78880,O-6478-36,1,Item is defective,Return Accepted,madeleine.neal@conixco.me
+80,Return to OEM,"""2019-09-17T12:11:49.000Z""",C-78880,O-6478-36,1,Item is defective,Return Accepted,madeleine.neal@conixco.me
+81,RMA Requested,"""2019-05-18T05:01:21.000Z""",C-51473,O-6835-77,20,Item is defective,,adam.murphy@turbosystems.biz
+81,RMA Refused,"""2019-05-18T05:16:21.000Z""",C-51473,O-6835-77,20,Item is defective,,adam.murphy@turbosystems.biz
+82,RMA Requested,"""2019-12-22T06:00:41.000Z""",C-33563,O-8965-82,4,Item is defective,,florance.helland@hassifix.net
+82,RMA Issued,"""2019-12-22T06:09:41.000Z""",C-33563,O-8965-82,4,Item is defective,,florance.helland@hassifix.net
+82,ASN Received,"""2019-12-22T09:09:41.000Z""",C-33563,O-8965-82,4,Item is defective,,florance.helland@hassifix.net
+82,Item Received,"""2019-12-27T09:09:41.000Z""",C-33563,O-8965-82,4,Item is defective,,florance.helland@hassifix.net
+82,Item Inspected,"""2020-01-01T09:09:41.000Z""",C-33563,O-8965-82,4,Item is defective,Return Accepted,florance.helland@hassifix.net
+82,Defective Item,"""2020-01-01T09:10:41.000Z""",C-33563,O-8965-82,4,Item is defective,Return Accepted,florance.helland@hassifix.net
+82,Repair Item,"""2020-01-03T02:10:41.000Z""",C-33563,O-8965-82,4,Item is defective,Return Accepted,florance.helland@hassifix.net
+82,Fixed,"""2020-01-04T22:10:41.000Z""",C-33563,O-8965-82,4,Item is defective,Return Accepted,florance.helland@hassifix.net
+82,Return to Stock,"""2020-01-04T22:18:41.000Z""",C-33563,O-8965-82,4,Item is defective,Return Accepted,florance.helland@hassifix.net
+83,RMA Requested,"""2019-05-20T12:43:34.000Z""",C-57856,O-2595-29,4,Wrong Size,,craig.pullman@vtgrafix.com
+83,RMA Issued,"""2019-05-20T12:59:34.000Z""",C-57856,O-2595-29,4,Wrong Size,,craig.pullman@vtgrafix.com
+83,ASN Received,"""2019-05-21T17:59:34.000Z""",C-57856,O-2595-29,4,Wrong Size,,craig.pullman@vtgrafix.com
+83,Item Received,"""2019-05-26T17:59:34.000Z""",C-57856,O-2595-29,4,Wrong Size,,craig.pullman@vtgrafix.com
+83,Item Inspected,"""2019-05-31T17:59:34.000Z""",C-57856,O-2595-29,4,Wrong Size,Return Accepted,craig.pullman@vtgrafix.com
+83,Customer Sat,"""2019-05-31T18:02:34.000Z""",C-57856,O-2595-29,4,Wrong Size,Return Accepted,craig.pullman@vtgrafix.com
+83,Return to Stock,"""2019-05-31T18:08:34.000Z""",C-57856,O-2595-29,4,Wrong Size,Return Accepted,craig.pullman@vtgrafix.com
+84,RMA Requested,"""2019-02-27T03:19:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,,jason.keesee@keycast.info
+84,RMA Issued,"""2019-02-27T03:36:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,,jason.keesee@keycast.info
+84,ASN Received,"""2019-02-28T08:36:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,,jason.keesee@keycast.info
+84,Item Received,"""2019-03-06T08:36:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,,jason.keesee@keycast.info
+84,Item Inspected,"""2019-03-11T08:36:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,Return Accepted,jason.keesee@keycast.info
+84,Customer Sat,"""2019-03-11T08:38:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,Return Accepted,jason.keesee@keycast.info
+84,Return to Stock,"""2019-03-11T08:42:01.000Z""",C-74451,O-7502-87,8,Ordered Wrong Item,Return Accepted,jason.keesee@keycast.info
+85,RMA Requested,"""2019-12-17T04:33:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,,ivan.winter@citisys.name
+85,RMA Issued,"""2019-12-17T04:39:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,,ivan.winter@citisys.name
+85,ASN Received,"""2019-12-19T00:39:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,,ivan.winter@citisys.name
+85,Item Received,"""2019-12-23T00:39:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,,ivan.winter@citisys.name
+85,Item Inspected,"""2019-12-28T00:39:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,Return Accepted,ivan.winter@citisys.name
+85,Recall Item,"""2019-12-28T00:46:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,Return Accepted,ivan.winter@citisys.name
+85,Repair Item,"""2019-12-29T01:46:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,Return Accepted,ivan.winter@citisys.name
+85,Fixed,"""2019-12-29T15:46:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,Return Accepted,ivan.winter@citisys.name
+85,Return to Customer,"""2019-12-31T12:46:16.000Z""",C-37786,O-6813-24,6,Item has been recalled,Return Accepted,ivan.winter@citisys.name
+86,RMA Requested,"""2020-03-04T04:24:06.000Z""",C-57516,O-3436-67,12,Wrong Size,,layla.coolidge@galcom.biz
+86,RMA Issued,"""2020-03-04T04:32:06.000Z""",C-57516,O-3436-67,12,Wrong Size,,layla.coolidge@galcom.biz
+86,ASN Received,"""2020-03-06T01:32:06.000Z""",C-57516,O-3436-67,12,Wrong Size,,layla.coolidge@galcom.biz
+86,Item Received,"""2020-03-10T01:32:06.000Z""",C-57516,O-3436-67,12,Wrong Size,,layla.coolidge@galcom.biz
+86,Item Inspected,"""2020-03-15T01:32:06.000Z""",C-57516,O-3436-67,12,Wrong Size,Return Accepted,layla.coolidge@galcom.biz
+86,Customer Sat,"""2020-03-15T01:39:06.000Z""",C-57516,O-3436-67,12,Wrong Size,Return Accepted,layla.coolidge@galcom.biz
+86,Return to Stock,"""2020-03-15T01:40:06.000Z""",C-57516,O-3436-67,12,Wrong Size,Return Accepted,layla.coolidge@galcom.biz
+87,RMA Requested,"""2019-01-27T09:01:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,,lynetta.hottle@triosys.co
+87,RMA Issued,"""2019-01-27T09:10:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,,lynetta.hottle@triosys.co
+87,ASN Received,"""2019-01-28T10:10:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,,lynetta.hottle@triosys.co
+87,Item Received,"""2019-01-31T10:10:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,,lynetta.hottle@triosys.co
+87,Item Inspected,"""2019-02-04T10:10:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,Return Accepted,lynetta.hottle@triosys.co
+87,Customer Sat,"""2019-02-04T10:18:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,Return Accepted,lynetta.hottle@triosys.co
+87,Return to Stock,"""2019-02-04T10:26:58.000Z""",C-36072,O-6173-84,18,Wrong Item Shipped,Return Accepted,lynetta.hottle@triosys.co
+88,RMA Requested,"""2019-06-11T12:52:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,,haley.luck@terralabs.edu
+88,RMA Issued,"""2019-06-11T12:57:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,,haley.luck@terralabs.edu
+88,ASN Received,"""2019-06-12T08:57:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,,haley.luck@terralabs.edu
+88,Item Received,"""2019-06-18T08:57:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,,haley.luck@terralabs.edu
+88,Item Inspected,"""2019-06-23T08:57:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,Return Accepted,haley.luck@terralabs.edu
+88,Customer Sat,"""2019-06-23T09:05:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,Return Accepted,haley.luck@terralabs.edu
+88,Return to Stock,"""2019-06-23T09:14:38.000Z""",C-84700,O-3745-96,3,Ordered Wrong Item,Return Accepted,haley.luck@terralabs.edu
+89,RMA Requested,"""2020-03-01T09:37:56.000Z""",C-63779,O-3474-56,7,Item is defective,,benito.zobel@maxcast.mobi
+89,RMA Issued,"""2020-03-01T09:47:56.000Z""",C-63779,O-3474-56,7,Item is defective,,benito.zobel@maxcast.mobi
+89,ASN Received,"""2020-03-02T06:47:56.000Z""",C-63779,O-3474-56,7,Item is defective,,benito.zobel@maxcast.mobi
+89,Item Received,"""2020-03-08T06:47:56.000Z""",C-63779,O-3474-56,7,Item is defective,,benito.zobel@maxcast.mobi
+89,Item Inspected,"""2020-03-11T06:47:56.000Z""",C-63779,O-3474-56,7,Item is defective,Return Accepted,benito.zobel@maxcast.mobi
+89,Defective Item,"""2020-03-11T06:55:56.000Z""",C-63779,O-3474-56,7,Item is defective,Return Accepted,benito.zobel@maxcast.mobi
+89,Repair Item,"""2020-03-12T17:55:56.000Z""",C-63779,O-3474-56,7,Item is defective,Return Accepted,benito.zobel@maxcast.mobi
+89,Fixed,"""2020-03-14T08:55:56.000Z""",C-63779,O-3474-56,7,Item is defective,Return Accepted,benito.zobel@maxcast.mobi
+89,Return to Customer,"""2020-03-15T07:55:56.000Z""",C-63779,O-3474-56,7,Item is defective,Return Accepted,benito.zobel@maxcast.mobi
+90,RMA Requested,"""2019-06-21T10:31:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,,erik.bradbury@sunopia.club
+90,RMA Issued,"""2019-06-21T10:40:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,,erik.bradbury@sunopia.club
+90,ASN Received,"""2019-06-22T12:40:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,,erik.bradbury@sunopia.club
+90,Item Received,"""2019-06-28T12:40:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,,erik.bradbury@sunopia.club
+90,Item Inspected,"""2019-07-03T12:40:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,Return Accepted,erik.bradbury@sunopia.club
+90,Customer Sat,"""2019-07-03T12:47:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,Return Accepted,erik.bradbury@sunopia.club
+90,Return to Stock,"""2019-07-03T12:50:27.000Z""",C-78566,O-8073-10,4,Ordered Wrong Item,Return Accepted,erik.bradbury@sunopia.club
+91,RMA Requested,"""2020-01-03T04:06:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,,curtis.magby@infratouch.gov
+91,RMA Issued,"""2020-01-03T04:25:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,,curtis.magby@infratouch.gov
+91,ASN Received,"""2020-01-04T09:25:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,,curtis.magby@infratouch.gov
+91,Item Received,"""2020-01-08T09:25:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,,curtis.magby@infratouch.gov
+91,Item Inspected,"""2020-01-14T09:25:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,Return Accepted,curtis.magby@infratouch.gov
+91,Customer Sat,"""2020-01-14T09:33:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,Return Accepted,curtis.magby@infratouch.gov
+91,Return to Stock,"""2020-01-14T09:41:18.000Z""",C-40961,O-3258-61,5,Wrong Item Shipped,Return Accepted,curtis.magby@infratouch.gov
+92,RMA Requested,"""2019-09-11T09:07:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,,dori.seabury@tomiatech.net
+92,RMA Issued,"""2019-09-11T09:15:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,,dori.seabury@tomiatech.net
+92,ASN Received,"""2019-09-12T00:15:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,,dori.seabury@tomiatech.net
+92,Item Received,"""2019-09-15T00:15:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,,dori.seabury@tomiatech.net
+92,Item Inspected,"""2019-09-20T00:15:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,Return Accepted,dori.seabury@tomiatech.net
+92,Customer Sat,"""2019-09-20T00:18:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,Return Accepted,dori.seabury@tomiatech.net
+92,Return to Stock,"""2019-09-20T00:27:38.000Z""",C-14141,O-1388-47,5,Wrong Item Shipped,Return Accepted,dori.seabury@tomiatech.net
+93,RMA Requested,"""2019-04-01T12:29:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,,alexa.krumm@loopsys.biz
+93,RMA Issued,"""2019-04-01T12:44:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,,alexa.krumm@loopsys.biz
+93,ASN Received,"""2019-04-02T22:44:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,,alexa.krumm@loopsys.biz
+93,Item Received,"""2019-04-08T22:44:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,,alexa.krumm@loopsys.biz
+93,Item Inspected,"""2019-04-14T22:44:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,Return Accepted,alexa.krumm@loopsys.biz
+93,Customer Sat,"""2019-04-14T22:46:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,Return Accepted,alexa.krumm@loopsys.biz
+93,Return to Stock,"""2019-04-14T22:50:39.000Z""",C-40716,O-8565-74,18,Wrong Item Shipped,Return Accepted,alexa.krumm@loopsys.biz
+94,RMA Requested,"""2019-07-30T03:15:27.000Z""",C-83356,O-8674-16,16,Wrong Size,,isabelle.miers@foretrust.edu
+94,RMA Issued,"""2019-07-30T03:22:27.000Z""",C-83356,O-8674-16,16,Wrong Size,,isabelle.miers@foretrust.edu
+94,ASN Received,"""2019-07-30T15:22:27.000Z""",C-83356,O-8674-16,16,Wrong Size,,isabelle.miers@foretrust.edu
+94,Item Received,"""2019-08-04T15:22:27.000Z""",C-83356,O-8674-16,16,Wrong Size,,isabelle.miers@foretrust.edu
+94,Item Inspected,"""2019-08-09T15:22:27.000Z""",C-83356,O-8674-16,16,Wrong Size,Return Accepted,isabelle.miers@foretrust.edu
+94,Customer Sat,"""2019-08-09T15:31:27.000Z""",C-83356,O-8674-16,16,Wrong Size,Return Accepted,isabelle.miers@foretrust.edu
+94,Return to Stock,"""2019-08-09T15:40:27.000Z""",C-83356,O-8674-16,16,Wrong Size,Return Accepted,isabelle.miers@foretrust.edu
+95,RMA Requested,"""2019-02-09T01:19:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,,rolf.connor@helixicon.gov
+95,RMA Issued,"""2019-02-09T01:32:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,,rolf.connor@helixicon.gov
+95,ASN Received,"""2019-02-10T08:32:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,,rolf.connor@helixicon.gov
+95,Item Received,"""2019-02-15T08:32:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,,rolf.connor@helixicon.gov
+95,Item Inspected,"""2019-02-21T08:32:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,Return Accepted,rolf.connor@helixicon.gov
+95,Customer Sat,"""2019-02-21T08:38:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,Return Accepted,rolf.connor@helixicon.gov
+95,Return to Stock,"""2019-02-21T08:41:01.000Z""",C-63581,O-5986-83,5,Ordered Wrong Item,Return Accepted,rolf.connor@helixicon.gov
+96,RMA Requested,"""2019-05-24T11:48:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,,chloe.verde@dynaair.info
+96,RMA Issued,"""2019-05-24T11:57:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,,chloe.verde@dynaair.info
+96,ASN Received,"""2019-05-24T19:57:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,,chloe.verde@dynaair.info
+96,Item Received,"""2019-05-27T19:57:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,,chloe.verde@dynaair.info
+96,Item Inspected,"""2019-05-30T19:57:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,Return Accepted,chloe.verde@dynaair.info
+96,Customer Sat,"""2019-05-30T20:00:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,Return Accepted,chloe.verde@dynaair.info
+96,Return to Stock,"""2019-05-30T20:03:35.000Z""",C-70288,O-7538-46,4,Ordered Wrong Item,Return Accepted,chloe.verde@dynaair.info
+97,RMA Requested,"""2019-07-04T05:12:08.000Z""",C-28524,O-7739-42,17,Ordered Wrong Item,,benito.krumm@infratouch.xyz
+97,RMA Issued,"""2019-07-04T05:23:08.000Z""",C-28524,O-7739-42,17,Ordered Wrong Item,,benito.krumm@infratouch.xyz
+97,ASN Received,"""2019-07-05T17:23:08.000Z""",C-28524,O-7739-42,17,Ordered Wrong Item,,benito.krumm@infratouch.xyz
+97,Item Received,"""2019-07-09T17:23:08.000Z""",C-28524,O-7739-42,17,Ordered Wrong Item,,benito.krumm@infratouch.xyz
+97,Item Inspected,"""2019-07-13T17:23:08.000Z""",C-28524,O-7739-42,17,Ordered Wrong Item,Return Rejected,benito.krumm@infratouch.xyz
+97,Reject Return,"""2019-07-13T17:27:08.000Z""",C-28524,O-7739-42,17,Unable to accept return - out of policy,Return Rejected,benito.krumm@infratouch.xyz
+97,Return to Customer,"""2019-07-15T16:27:08.000Z""",C-28524,O-7739-42,17,Unable to accept return - out of policy,Return Rejected,benito.krumm@infratouch.xyz
+98,RMA Requested,"""2019-02-08T05:28:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,,dannielle.brier@cirpria.info
+98,RMA Issued,"""2019-02-08T05:38:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,,dannielle.brier@cirpria.info
+98,ASN Received,"""2019-02-09T13:38:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,,dannielle.brier@cirpria.info
+98,Item Received,"""2019-02-15T13:38:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,,dannielle.brier@cirpria.info
+98,Item Inspected,"""2019-02-18T13:38:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,Return Accepted,dannielle.brier@cirpria.info
+98,Customer Sat,"""2019-02-18T13:39:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,Return Accepted,dannielle.brier@cirpria.info
+98,Return to Stock,"""2019-02-18T13:45:19.000Z""",C-35932,O-7899-73,20,Wrong Item Shipped,Return Accepted,dannielle.brier@cirpria.info
+99,RMA Requested,"""2019-02-04T06:06:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,,cedric.woodrum@chromaton.me
+99,RMA Issued,"""2019-02-04T06:18:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,,cedric.woodrum@chromaton.me
+99,ASN Received,"""2019-02-05T02:18:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,,cedric.woodrum@chromaton.me
+99,Item Received,"""2019-02-10T02:18:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,,cedric.woodrum@chromaton.me
+99,Item Inspected,"""2019-02-14T02:18:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,Return Accepted,cedric.woodrum@chromaton.me
+99,Recall Item,"""2019-02-14T02:20:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,Return Accepted,cedric.woodrum@chromaton.me
+99,Repair Item,"""2019-02-15T06:20:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,Return Accepted,cedric.woodrum@chromaton.me
+99,Fixed,"""2019-02-16T18:20:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,Return Accepted,cedric.woodrum@chromaton.me
+99,Return to Customer,"""2019-02-17T10:20:46.000Z""",C-61913,O-9096-99,6,Item has been recalled,Return Accepted,cedric.woodrum@chromaton.me
+100,RMA Requested,"""2020-02-19T03:54:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,,roman.cadena@terralabs.net
+100,RMA Issued,"""2020-02-19T04:06:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,,roman.cadena@terralabs.net
+100,ASN Received,"""2020-02-19T17:06:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,,roman.cadena@terralabs.net
+100,Item Received,"""2020-02-23T17:06:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,,roman.cadena@terralabs.net
+100,Item Inspected,"""2020-02-27T17:06:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,Return Accepted,roman.cadena@terralabs.net
+100,Recall Item,"""2020-02-27T17:09:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,Return Accepted,roman.cadena@terralabs.net
+100,Repair Item,"""2020-02-28T21:09:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,Return Accepted,roman.cadena@terralabs.net
+100,Used for Parts,"""2020-02-29T12:09:50.000Z""",C-18652,O-9436-86,5,Item has been recalled,Return Accepted,roman.cadena@terralabs.net
